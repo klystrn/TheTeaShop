@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>TheTeaShop - Product Catalogue</title>
+        <link rel="icon" href="assets\media\TheTeaShop - logo.jpg">
+        
+        <!-- ========================== STYLES ========================== -->
+        <link rel="stylesheet" href="assets\css\styles.css"> 
+        <link rel="stylesheet" href="assets\fonts\Avenir Next\avenir-next.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    </head>
+
+    <body>
+        <!-- ========================== NAVIGATION BAR ========================== -->
+        <header>
+            <nav>
+                <div class="navigation_grid">
+                    <div class="navigation_gridleft">
+                        <div class="navigation_gridleft_column1">
+                            <a href="index.html">
+                                <img class="navigation_logo" src="assets\media\TheTeaShop - logo.jpg" alt="TheTeaShop Logo">
+                            </a>
+                        </div>
+    
+                        <div class="navigation_gridleft_column2">
+                            <h1 class="navigation_heading">The Tea Shop</h1>
+                        </div>
+                        <button class="navigation_user">
+                            <i class="uil uil-user"></i>
+                        </button>
+                        <button class="navigation_shoppingcart">
+                            <i class="il uil-shopping-bag"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- ================= Hamburger Menu ================= -->
+                    <div class="navigation_hamburger_menu">
+                        <input type="checkbox" id="active">
+                        <label for="active" class="hamburger">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <div class="navigation_menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="ProductCatalogue.html">Products</a></li>
+                                <li><a href="ContactUs.html">Reach Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ========================== PAGE: PRODUCTS ========================== -->
+
+        <!-- ================= Product Catalogue ================= -->
+        <section class="product_catalogue" id="top">
+            <h2 class="product_catalogue_header">Our Products</h2>
+            <div class="product_grid">
+
+                <!-- ================= Product 1 - HS Earl Grey ================= -->
+                <div class="product_grid_item">
+                    <img class="product_item_image" src="assets\media\product-renders\TheHouseSpecials - EarlGrey.jpg">
+                    <div class="product_item_details">
+                        <p class="product_item_details_name">The House Specials <br> <span class="item_title">Earl Grey</span></p>
+                        <p class="product_item_details_description">A classic tea blend flavoured flawlessly made with Oil of Bergamot and Black Tea</p>
+                    </div>
+                    <p class="product_item_price">SGD$19.90</p>
+                    <button class="product_item_add-to-cart">
+                        <i class="uil uil-plus cart_icon"></i>
+                        Add To Cart
+                    </button>
+                </div>
+
+                <!-- ================= Product 2 - HS English Breakfast Tea ================= -->
+                <div class="product_grid_item">
+                    <img class="product_item_image" src="assets\media\product-renders\TheHouseSpecials - EnglishBreakfastTea.jpg" >
+                    <div class="product_item_details">
+                        <p class="product_item_details_name">The House Specials <br> <span class="item_title">English Breakfast Tea</span></p>
+                        <p class="product_item_details_description">Full-bodied, robust, rich and blended flavours paired with milk and sugar</p>
+                    </div>
+                    <p class="product_item_price">SGD$19.90</p>
+                    <button class="product_item_add-to-cart">
+                        <i class="uil uil-plus cart_icon"></i>
+                        Add To Cart
+                    </button>
+                </div>
+
+                <!-- ================= Product 3 - HS Matcha ================= -->
+                <div class="product_grid_item">
+                    <img class="product_item_image" src="assets\media\product-renders\TheHouseSpecials - Matcha.jpg">
+                    <div class="product_item_details">
+                        <p class="product_item_details_name">The House Specials <br> <span class="item_title">Matcha</span></p>
+                        <p class="product_item_details_description">Finely ground matcha powder of specially grown East Asian green tea leaves</p>
+                    </div>
+                    <p class="product_item_price">SGD$19.90</p>
+                    <button class="product_item_add-to-cart">
+                        <i class="uil uil-plus cart_icon"></i>
+                        Add To Cart
+                    </button>
+                </div>
+
+                <!-- ================= Product 4 - FF Bliss ================= -->
+                <div class="product_grid_item">
+                    <img class="product_item_image" src="assets\media\product-renders\FloralFantasy - bliss.jpg">
+                    <div class="product_item_details">
+                        <p class="product_item_details_name">Floral Fantasy <br> <span class="item_title">Bliss</span></p>
+                        <p class="product_item_details_description">A delightful blend of cosy and calm for relaxation <br><span class="item_ingredients">Linen flowers, Vanilla bean extract</span></p>
+                    </div>
+                    <p class="product_item_price">SGD$24.90</p>
+                    <button class="product_item_add-to-cart">
+                        <i class="uil uil-plus cart_icon"></i>
+                        Add To Cart
+                    </button>
+                </div>
+
+                <!-- ================= Product 5 - FF Bloom ================= -->
+                <div class="product_grid_item">
+                    <img class="product_item_image" src="assets\media\product-renders\FloralFantasy - bloom.jpg">
+                    <div class="product_item_details">
+                        <p class="product_item_details_name">Floral Fantasy <br> <span class="item_title">Bloom</span></p>
+                        <p class="product_item_details_description">Floral and fresh tones for inner peace <br><span class="item_ingredients">Rosehip, Rose petals, Lemon balm</span></p>
+                    </div>
+                    <p class="product_item_price">SGD$24.90</p>
+                    <button class="product_item_add-to-cart">
+                        <i class="uil uil-plus cart_icon"></i>
+                        Add To Cart
+                    </button>
+                </div>
+
+                <!-- ================= Product 6 - FF Reverie ================= -->
+                <div class="product_grid_item">
+                    <img class="product_item_image" src="assets\media\product-renders\FloralFantasy - reverie.jpg">
+                    <div class="product_item_details">
+                        <p class="product_item_details_name">Floral Fantasy <br> <span class="item_title">Reverie</span></p>
+                        <p class="product_item_details_description">Delicate fushion ingredients for focus <br><span class="item_ingredients">Lavender, Earl grey</span></p>
+                    </div>
+                    <p class="product_item_price">SGD$24.90</p>
+                    <button class="product_item_add-to-cart">
+                        <i class="uil uil-plus cart_icon"></i>
+                        Add To Cart
+                    </button>
+                </div>
+
+                <!-- ================= Product 7 - GP The Tea Gift Pack ================= -->
+                <div class="product_grid_item">
+                    <img class="product_item_image" src="assets\media\product-renders\TheHouseSpecials - TeaGiftPack.jpg">
+                    <div class="product_item_details">
+                        <p class="product_item_details_name">The House Specials<br> <span class="item_title">The Tea Gift Pack</span></p>
+                        <p class="product_item_details_description">4 Packs of 3 Teas for complete convalescence<br><span class="item_ingredients">Earl Grey, English Breakfast, Mactha</span></p>
+                    </div>
+                    <p class="product_item_price">SGD$189.90</p>
+                    <button class="product_item_add-to-cart">
+                        <i class="uil uil-plus cart_icon"></i>
+                        Add To Cart
+                    </button>
+                </div>
+
+                <!-- ================= Product 8 - GP The Classic Tea Gift Pack ================= -->
+                <div class="product_grid_item">
+                    <img class="product_item_image" src="assets\media\product-renders\TheHouseSpecials - TheClassic - FrontView.jpg">
+                    <div class="product_item_details">
+                        <p class="product_item_details_name">The House Specials<br> <span class="item_title">The Classic Tea Gift Pack</span></p>
+                        <p class="product_item_details_description">2 Packs of 3 Teas for absolute relaxation<br><span class="item_ingredients">Earl Grey, English Breakfast, Mactha</span></p>
+                    </div>
+                    <p class="product_item_price">SGD$99.90</p>
+                    <button class="product_item_add-to-cart">
+                        <i class="uil uil-plus cart_icon"></i>
+                        Add To Cart
+                    </button>
+                </div>
+
+                <!-- ================= Product 9 - GP Bouquet Of Dreams ================= -->
+                <div class="product_grid_item">
+                    <img class="product_item_image" src="assets\media\product-renders\FloralFantasy - BouquetOfDreams.png">
+                    <div class="product_item_details">
+                        <p class="product_item_details_name">Floral Fantasy<br> <span class="item_title">Bouquet of Dreams</span></p>
+                        <p class="product_item_details_description">1 Packs of 3 Teas for those magical nights<br><span class="item_ingredients">Bloom, Bliss, Reverie</span></p>
+                    </div>
+                    <p class="product_item_price">SGD$69.90</p>
+                    <button class="product_item_add-to-cart">
+                        <i class="uil uil-plus cart_icon"></i>
+                        Add To Cart
+                    </button>
+                </div>
+                
+            </div>
+        </section>
+        
+
+        <!-- ========================== FOOTER ========================== -->
+        <footer class="footer" id="footer">
+
+            <!-- ================= Column 1 ================= -->
+            <div class="footer_column1">
+                <h3 class="footer_column1_header">The Tea Shop</h3>
+                <p class="footer_links">
+                    <a class="footer_link_content" href="index.html">Home</a>
+                    |
+                    <a class="footer_link_content" href="ProductCatalogue.html">Products</a>
+                    |
+                    <a class="footer_link_content" href="ContactUs.html">Contact</a> 
+                </p>
+            </div>
+            
+            <!-- ================= Column 2 ================= -->
+            <div class="footer_column2">
+                <div>
+                    <i class="uil uil-location-point footer_column2_icon"></i>
+                    <p>#02-04, The Star Vista, Singapore 138617 <span>1 Vista Exchange Green, Singapore</span></p>
+                </div>
+    
+                <div>
+                    <i class="uil uil-phone-alt footer_column2_icon"></i>
+                    <p>+65 6694 3127</p>
+                </div>
+
+                <div>
+                    <i class="uil uil-envelope-alt footer_column2_icon"></i>
+                    <p>
+                        <a class="footer_column2_email" href="contactus@theteashop.com.sg">contactus@theteashop.com.sg</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- ================= Column 3 ================= -->
+            <div class="footer_column3">
+                <p class="footer_column3_about">
+                    <span>About Us</span>
+                    <strong>The Tea Shop</strong> is passionately dedicated to modernising 
+                    tea appreciation and sharing our knowledge about tea culture.
+                    We aim to share the health benefits of tea drinking with our 
+                    customers and aspire for our customers to appreciate our 
+                    specially curated tea blends.
+                </p>
+                <div class="footer_icons">
+                    <div class="footer_button">
+                        <a class="footer_iconlink" href="https://www.facebook.com/">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <button class="footer_button_facebook">
+                            Facebook
+                        </button>
+                    </div>
+           
+                    <div class="footer_button">
+                        <a class="footer_iconlink" href="https://www.twitter.com/">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                        <button class="footer_button_twitter">
+                            Twitter
+                        </button>
+                    </div>
+           
+                    <div class="footer_button">
+                        <a class="footer_iconlink" href="https://www.instagram.com/">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <button class="footer_button_instagram">
+                            Instagram
+                        </button>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="altfooter_parent">
+                <div class="altfooter_icons">
+                    <div class="footer_button">
+                        <a class="footer_iconlink" href="https://www.facebook.com/">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <button class="footer_button_facebook">
+                            Facebook
+                        </button>
+                    </div>
+           
+                    <div class="footer_button">
+                        <a class="footer_iconlink" href="https://www.twitter.com/">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                        <button class="footer_button_twitter">
+                            Twitter
+                        </button>
+                    </div>
+           
+                    <div class="footer_button">
+                        <a class="footer_iconlink" href="https://www.instagram.com/">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <button class="footer_button_instagram">
+                            Instagram
+                        </button>
+                    </div>
+                 </div>
+            </div>
+            <p class="footer_copyright">Copyright © <strong>Reginald Tan</strong> 2022 - All rights reserved</p>
+        </footer>
+
+        <!-- ========================== SCROLLUP ========================== -->
+        <a href="#top" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!-- ========================== EXTERNAL FILES ========================== -->
+        <script src="assets\javascript\main.js"></script>
+    </body>
+
+</html>

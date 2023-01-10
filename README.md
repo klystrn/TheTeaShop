@@ -19,9 +19,10 @@ Our 2 product lines allow YOU to choose between a strong, aromatic kick or a del
 - Home Page
     - News & Promotions
     - Discover
--About Us
+- About Us
     - About TTS
     - Corporate Responsibility
+    - Our Team
 - Products Catalogue
     - The House Specials: Earl Grey (SGD $19.90)
     - The House Specials: English Breakfast Tea (SGD $19.90)
@@ -34,6 +35,7 @@ Our 2 product lines allow YOU to choose between a strong, aromatic kick or a del
     - Bouquet of Dreams: 1 pack of 3 teas (SGD $69.90)
 - Individual Product Pages
 - Shopping Cart Page
+- Checkout Page
 - Contact Us Page
 - FAQ Page
 

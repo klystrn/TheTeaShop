@@ -1266,13 +1266,13 @@ footer{
         position: absolute;
         z-index: 1;
         right: 104px;
-        top: 205px;
+        top: 160px;
         color: #FFFFFF;
         width: 25%;
     }
     .home_image_postertext h1{
         margin-bottom: 0.35rem;
-        font-size: calc(var(--h2-font-size) - 2.1rem);
+        font-size: calc(var(--h2-font-size) - 2.2rem);
     }
     .home_image_postertext a{
         margin-top: 3rem;
@@ -1404,26 +1404,26 @@ footer{
         position: absolute;
         z-index: 1;
         right: 104px;
-        top: 160px;
+        top: 155px;
         color: #FFFFFF;
-        width: 25%;
+        width: 27%;
     }
     .home_image_postertext h1{
-        margin-bottom: 0.35rem;
-        font-size: calc(var(--h2-font-size) - 2.4rem);
+        margin-bottom: 0.2rem;
+        font-size: calc(var(--h2-font-size) - 2.5rem);
     }
     .home_image_postertext a{
         margin-top: 2rem;
         border-radius: 20px;
         color: var(--special-orange-strong);
         background-color: #FFFFFF;
-        padding: 0.5rem;
+        padding: 0.3rem;
         text-decoration: none;
         font-weight: 700;
         cursor: pointer;
     }
     .home_image_postertext .text{
-        font-size: calc(var(--tablets-font-size) - 0.2rem);
+        font-size: calc(var(--tablets-font-size) - 0.3rem);
     }
 	.home_aboutus_grid_column2 {
 		display: none;
@@ -1510,6 +1510,73 @@ footer{
     
 }
 
+@media screen and (max-width: 616px){
+    body{
+        font-size: var(--tablets-font-size);
+    }
+
+    .home_image_postertext{
+        position: absolute;
+        z-index: 1;
+        right: 104px;
+        top: 145px;
+        color: #FFFFFF;
+        width: 28%;
+    }
+    .home_image_postertext h1{
+        margin-bottom: 0.2rem;
+        font-size: calc(var(--h2-font-size) - 2.6rem);
+    }
+    .home_image_postertext a{
+        margin-top: 2rem;
+        border-radius: 20px;
+        color: var(--special-orange-strong);
+        background-color: #FFFFFF;
+        padding: 0.15rem;
+        text-decoration: none;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .home_image_postertext .text{
+        font-size: calc(var(--tablets-font-size) - 0.34rem);
+    }
+}
+
+@media screen and (max-width: 570px){
+    body{
+        font-size: var(--mobile-font-size);
+    }
+
+    .home_image_postertext{
+        position: absolute;
+        z-index: 1;
+        right: 104px;
+        top: 145px;
+        color: #FFFFFF;
+        width: 27%;
+    }
+    .home_image_postertext h1{
+        margin-bottom: 0.1rem;
+        font-size: calc(var(--h2-font-size) - 2.7rem);
+    }
+    .home_image_postertext a{
+        margin-top: 0.4rem;
+        border-radius: 20px;
+        color: var(--special-orange-strong);
+        background-color: #FFFFFF;
+        padding: 0.15rem;
+        text-decoration: none;
+        font-weight: 700;
+        cursor: pointer;
+        
+    }
+    .home_image_postertext .text{
+        font-size: calc(var(--tablets-font-size) - 0.5rem);
+    }
+}
+
+
+
 /* ================ Mobile Devices ================ */
 @media screen and (max-width: 480px) {
     body{
@@ -1555,13 +1622,13 @@ footer{
         position: absolute;
         z-index: 1;
         right: 104px;
-        top: 125px;
+        top: 140px;
         color: #FFFFFF;
-        width: 26%;
+        width: 27%;
     }
     .home_image_postertext h1{
-        margin-bottom: 0.15rem;
-        font-size: calc(var(--h2-font-size) - 2.75rem);
+        margin-bottom: 0.1rem;
+        font-size: calc(var(--h2-font-size) - 2.9rem);
     }
     .home_image_postertext a{
         border-radius: 20px;
@@ -1571,10 +1638,10 @@ footer{
         text-decoration: none;
         font-weight: 700;
         cursor: pointer;
-        font-size: calc(var(--h2-font-size) - 2.75rem);;
+        font-size: calc(var(--h2-font-size) - 2.9rem);
     }
     .home_image_postertext .text{
-        font-size: calc(var(--mobile-font-size) - 0.6rem);
+        font-size: calc(var(--mobile-font-size) - 0.55rem);
     }
     .home_altlogo{
         width: 215px;
@@ -1710,9 +1777,9 @@ footer{
         position: absolute;
         z-index: 1;
         right: 104px;
-        top: 140px;
+        top: 135px;
         color: #FFFFFF;
-        width: 26%;
+        width: 27%;
     }
     .home_image_postertext h1{
         margin-bottom: 0.1rem;
@@ -1726,7 +1793,7 @@ footer{
         text-decoration: none;
         font-weight: 700;
         cursor: pointer;
-        font-size: calc(var(--h2-font-size) - 2.9rem);;
+        font-size: calc(var(--h2-font-size) - 3rem);;
     }
     .home_image_postertext .text{
         font-size: calc(var(--mobile-font-size) - 0.6rem);

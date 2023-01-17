@@ -99,6 +99,9 @@ Our 2 product lines allow YOU to choose between a strong, aromatic kick or a del
     - Updated README.md to fit new context __Reginald__
     - Created a Kanban board using Notion for project management purposes __Reginald__
 
+3. 12/01/2023
+    - Add the relevant pages and commit to main, ensure the filepaths are clear throughout all files __Jerel__
+
 ## Design ##
 ### Colour Scheme ###
 - Orange Dark (#E68D19)

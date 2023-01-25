@@ -1,311 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>TheTeaShop - Reach Us</title>
-        <link rel="icon" href="assets\media\TheTeaShop - logo.jpg">
+    <title>TheTeaShop - Reach Us</title>
+    <link rel="icon" href="assets\media\TheTeaShop - logo.jpg">
+
+    <!-- ========================== STYLES ========================== -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets\fonts\Avenir Next\avenir-next.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+        type="text/css" />
         
-        <!-- ========================== STYLES ========================== -->
-        <link rel="stylesheet" href="assets\css\styles.css"> 
-        <link rel="stylesheet" href="assets\fonts\Avenir Next\avenir-next.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    </head>
+</head>
 
-    <body>
-        <!-- ========================== NAVIGATION BAR ========================== -->
-        <header>
-            <nav>
-                <div class="navigation_grid">
-                    <div class="navigation_gridleft">
-                        <div class="navigation_gridleft_column1">
-                            <a href="index.html">
-                                <img class="navigation_logo" src="assets\media\TheTeaShop - logo.jpg" alt="TheTeaShop Logo">
-                            </a>
-                        </div>
-    
-                        <div class="navigation_gridleft_column2">
-                            <h1 class="navigation_heading">The Tea Shop</h1>
-                        </div>
-                        <button class="navigation_user">
-                            <i class="uil uil-user"></i>
-                        </button>
-                        <button class="navigation_shoppingcart">
-                            <i class="il uil-shopping-bag"></i>
-                        </button>
+<body>
+    <!-- ========================== NAVIGATION BAR ========================== -->
+    <header>
+        <nav>
+            <div class="navigation_grid">
+                <div class="navigation_gridleft">
+                    <div class="navigation_gridleft_column1">
+                        <a href="index.html">
+                            <img class="navigation_logo" src="assets\media\TheTeaShop - logo.jpg" alt="TheTeaShop Logo">
+                        </a>
                     </div>
-                    
-                    <!-- ================= Hamburger Menu ================= -->
-                    <div class="navigation_hamburger_menu">
-                        <input type="checkbox" id="active">
-                        <label for="active" class="hamburger">
-                            <i class="fas fa-bars"></i>
-                        </label>
-                        <div class="navigation_menu">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="ProductCatalogue.html">Products</a></li>
-                                <li><a href="ContactUs.html">Reach Us</a></li>
-                            </ul>
+
+                    <div class="navigation_gridleft_column2">
+                        <h1 class="navigation_heading">The Tea Shop</h1>
+                    </div>
+                    <button class="navigation_user">
+                        <i class="uil uil-user"></i>
+                    </button>
+                    <button class="navigation_shoppingcart">
+                        <i class="il uil-shopping-bag"></i>
+                    </button>
+                </div>
+
+                <!-- ================= Hamburger Menu ================= -->
+                <div class="navigation_hamburger_menu">
+                    <input type="checkbox" id="active">
+                    <label for="active" class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <div class="navigation_menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="ProductCatalogue.html">Products</a></li>
+                            <li><a href="ContactUs.html">Reach Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================== PAGE: REACH US ========================== -->
+
+    <!-- ================= FAQs ================= -->
+    <section class="contact_faq" id="top">
+        <h2 class="contact_section_header">Frequently-Asked Questions</h2>
+        <div class="contact_faq_grid">
+            <div class="contact_faq_column1">
+                <div class="faq_accordion">
+                    <div class="faq_accordion_content">
+                        <h3 class="title">FAQs</h3>
+                        <ul class="faq_text">
+                            <!--==================== Question 1 ====================-->
+                            <li>
+                                <div class="question_arrow">
+                                    <span class="question">How much is a delivery?</span>
+                                    <i class="uil uil-plus arrow"></i>
+                                </div>
+                                <p>
+                                    Enjoy free complimentary priority delivery on all of our orders!
+                                    <br><br>
+                                    International Shipping Costs are also free for most countries if we have a
+                                    fulfillment center near your location
+                                </p>
+                                <span class="line"></span>
+                            </li>
+
+                            <!--==================== Question 2 ====================-->
+                            <li>
+                                <div class="question_arrow">
+                                    <span class="question">Can shipping fares be refunded?</span>
+                                    <i class="uil uil-plus arrow"></i>
+                                </div>
+                                <p>
+                                    Any shipping costs paid for expediated delivery are non-refundable.
+                                    If an item is exchanged, the shipping fare for the first delivery will not be
+                                    refunded.
+                                    No shipping fare will be charged for the second delivery except if a faster shipping
+                                    method is requested.
+                                </p>
+                                <span class="line"></span>
+                            </li>
+
+                            <!--==================== Question 3 ====================-->
+                            <li>
+                                <div class="question_arrow">
+                                    <span class="question">Which payment methods are accepted?</span>
+                                    <i class="uil uil-plus arrow"></i>
+                                </div>
+                                <p>
+                                    The Tea Shop accepts all major payment cards. These include Visa, Mastercard,
+                                    American Express,
+                                    Discover, and Diners Club. Some of our specialized payment methods include PayNow,
+                                    Apple Pay & Google Pay.
+                                </p>
+                                <span class="line"></span>
+                            </li>
+
+                            <!--==================== Question 4 ====================-->
+                            <li>
+                                <div class="question_arrow">
+                                    <span class="question">How do I return or exchange for an item I ordered?</span>
+                                    <i class="uil uil-plus arrow"></i>
+                                </div>
+                                <p>
+                                    Please contact us via our website or email us at <a class="faq_email"
+                                        href="contactus@theteashop.com.sg">contactus@theteashop.com.sg</a>.
+                                    <br><br>
+                                    We are available Monday - Friday between 9am to 6pm and will try to respond to all
+                                    emails within a few hours.
+                                </p>
+                                <span class="line"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact_faq_column2">
+                <div id='map'></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Contact Us ================= -->
+    <section class="contact_contactus">
+        <h2 class="contact_section_header">Contact Us</h2>
+        <br>
+        <div class="contact_division">
+            <div class="columns">
+                <div class="left_column">
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">Address</div>
+                        <div class="text-one">
+                            <p>
+                                <strong>#02-04, 138617</strong>
+                                <br>
+                                The Star Vista, Singapore
+                            </p>
+                        </div>
+                    </div>
+                    <div class="phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="topic">Phone</div>
+                        <div class="text-one">
+                            <strong>+65 6694 3127</strong>
+                        </div>
+                    </div>
+                    <div class="email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-one">
+                            <strong>contactus <br> @theteashop.com.sg</strong>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
+                <div class="right_column">
+                    <div class="message_us">Send Us A Message!</div>
+                    <p>Estimated reply time is usually between 1-3 working days</p>
+                    <form class="contactus_form" id="contactus_form" action="#">
+                        <div class="input_box">
+                            <input type="text" placeholder="Name...">
+                        </div>
+                        <div class="input_box">
+                            <input type="text" placeholder="User@email.com"
+                                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+                        </div>
+                        <div class="input_box">
+                            <input type="tel" placeholder="65 12345678" pattern="[5-6]{2} [0-9]{4}[0-9]{4}">
+                        </div>
+                        <div class="input_box message_box">
+                            <input type="text" placeholder="Message...">
+                        </div>
+                        <div class="button">
+                            <input type="button" value="Send Now" onclick="clearInput()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- ========================== PAGE: REACH US ========================== -->
+    <!-- ========================== FOOTER ========================== -->
+    <footer class="footer" id="footer">
 
-        <!-- ================= FAQs ================= -->
-		<section class="contact_faq" id="top">
-			<h2 class="contact_section_header">Frequently-Asked Questions</h2>
-			<div class="contact_faq_grid">
-				<div class="contact_faq_column1">
-					<div class="faq_accordion">
-						<div class="faq_accordion_content">
-							<h3 class="title">FAQs</h3>
-							<ul class="faq_text">
-								<!--==================== Question 1 ====================-->
-								<li>
-									<div class="question_arrow">
-										<span class="question">How much is a delivery?</span>
-										<i class="uil uil-plus arrow"></i>
-									</div>
-									<p>
-										Enjoy free complimentary priority delivery on all of our orders!
-										<br><br>
-										International Shipping Costs are also free for most countries if we have a fulfillment center near your location
-									</p>
-									<span class="line"></span>
-								</li>
-	
-								<!--==================== Question 2 ====================-->
-								<li>
-									<div class="question_arrow">
-										<span class="question">Can shipping fares be refunded?</span>
-										<i class="uil uil-plus arrow"></i>
-									</div>
-									<p>
-										Any shipping costs paid for expediated delivery are non-refundable. 
-										If an item is exchanged, the shipping fare for the first delivery will not be refunded. 
-										No shipping fare will be charged for the second delivery except if a faster shipping method is requested.
-									</p>
-									<span class="line"></span>
-								</li>
+        <!-- ================= Column 1 ================= -->
+        <div class="footer_column1">
+            <h3 class="footer_column1_header">The Tea Shop</h3>
+            <p class="footer_links">
+                <a class="footer_link_content" href="index.html">Home</a>
+                |
+                <a class="footer_link_content" href="ProductCatalogue.html">Products</a>
+                |
+                <a class="footer_link_content" href="ContactUs.html">Contact</a>
+            </p>
+        </div>
 
-								<!--==================== Question 3 ====================-->
-								<li>
-									<div class="question_arrow">
-										<span class="question">Which payment methods are accepted?</span>
-										<i class="uil uil-plus arrow"></i>
-									</div>
-									<p>
-										The Tea Shop accepts all major payment cards. These include Visa, Mastercard, American Express, 
-										Discover, and Diners Club. Some of our specialized payment methods include PayNow, Apple Pay & Google Pay.
-									</p>
-									<span class="line"></span>
-								</li>
+        <!-- ================= Column 2 ================= -->
+        <div class="footer_column2">
+            <div>
+                <i class="uil uil-location-point footer_column2_icon"></i>
+                <p>#02-04, The Star Vista, Singapore 138617 <span>1 Vista Exchange Green, Singapore</span></p>
+            </div>
 
-								<!--==================== Question 4 ====================-->
-								<li>
-									<div class="question_arrow">
-										<span class="question">How do I return or exchange for an item I ordered?</span>
-										<i class="uil uil-plus arrow"></i>
-									</div>
-									<p>
-										Please contact us via our website or email us at <a class="faq_email" href="contactus@theteashop.com.sg">contactus@theteashop.com.sg</a>.
-										<br><br> 
-										We are available Monday - Friday between 9am to 6pm and will try to respond to all emails within a few hours.
-									</p>
-									<span class="line"></span>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+            <div>
+                <i class="uil uil-phone-alt footer_column2_icon"></i>
+                <p>+65 6694 3127</p>
+            </div>
 
-				<div class="contact_faq_column2">
-					<iframe class="google_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7805958462673!2d103.78582477605822!3d1.3068071986807908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a42945558f7%3A0x8c2a969d6131f79b!2sThe%20Star%20Vista!5e0!3m2!1sen!2ssg!4v1670149827815!5m2!1sen!2ssg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-			</div>
-		</section>
-
-        <!-- ================= Contact Us ================= -->
-		<section class="contact_contactus">
-			<h2 class="contact_section_header">Contact Us</h2>
-			<br>
-			<div class="contact_division">
-				<div class="columns">
-					<div class="left_column">
-						<div class="address details">
-							<i class="fas fa-map-marker-alt"></i>
-							<div class="topic">Address</div>
-							<div class="text-one">
-								<p>
-									<strong>#02-04, 138617</strong>
-									<br>
-									The Star Vista, Singapore
-								</p>
-							</div>
-						</div>
-						<div class="phone details">
-							<i class="fas fa-phone-alt"></i>
-							<div class="topic">Phone</div>
-							<div class="text-one">
-								<strong>+65 6694 3127</strong>
-							</div>
-						</div>
-						<div class="email details">
-							<i class="fas fa-envelope"></i>
-							<div class="topic">Email</div>
-							<div class="text-one">
-								<strong>contactus <br> @theteashop.com.sg</strong>
-							</div>
-						</div>
-					</div>
-					<div class="right_column">
-						<div class="message_us">Send Us A Message!</div>
-						<p>Estimated reply time is usually between 1-3 working days</p>
-						<form class="contactus_form" id="contactus_form" action="#">
-							<div class="input_box">
-								<input type="text" placeholder="Name...">
-							</div>
-							<div class="input_box">
-								<input type="text" placeholder="User@email.com" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
-							</div>
-							<div class="input_box">
-								<input type="tel" placeholder="65 12345678" pattern="[5-6]{2} [0-9]{4}[0-9]{4}">
-							</div>
-							<div class="input_box message_box">
-								<input type="text" placeholder="Message...">
-							</div>
-							<div class="button">
-								<input type="button" value="Send Now" onclick="clearInput()">
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-        
-        <!-- ========================== FOOTER ========================== -->
-        <footer class="footer" id="footer">
-
-            <!-- ================= Column 1 ================= -->
-            <div class="footer_column1">
-                <h3 class="footer_column1_header">The Tea Shop</h3>
-                <p class="footer_links">
-                    <a class="footer_link_content" href="index.html">Home</a>
-                    |
-                    <a class="footer_link_content" href="ProductCatalogue.html">Products</a>
-                    |
-                    <a class="footer_link_content" href="ContactUs.html">Contact</a> 
+            <div>
+                <i class="uil uil-envelope-alt footer_column2_icon"></i>
+                <p>
+                    <a class="footer_column2_email" href="contactus@theteashop.com.sg">contactus@theteashop.com.sg</a>
                 </p>
             </div>
-            
-            <!-- ================= Column 2 ================= -->
-            <div class="footer_column2">
-                <div>
-                    <i class="uil uil-location-point footer_column2_icon"></i>
-                    <p>#02-04, The Star Vista, Singapore 138617 <span>1 Vista Exchange Green, Singapore</span></p>
-                </div>
-    
-                <div>
-                    <i class="uil uil-phone-alt footer_column2_icon"></i>
-                    <p>+65 6694 3127</p>
+        </div>
+
+        <!-- ================= Column 3 ================= -->
+        <div class="footer_column3">
+            <p class="footer_column3_about">
+                <span>About Us</span>
+                <strong>The Tea Shop</strong> is passionately dedicated to modernising
+                tea appreciation and sharing our knowledge about tea culture.
+                We aim to share the health benefits of tea drinking with our
+                customers and aspire for our customers to appreciate our
+                specially curated tea blends.
+            </p>
+            <div class="footer_icons">
+                <div class="footer_button">
+                    <a class="footer_iconlink" href="https://www.facebook.com/">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <button class="footer_button_facebook">
+                        Facebook
+                    </button>
                 </div>
 
-                <div>
-                    <i class="uil uil-envelope-alt footer_column2_icon"></i>
-                    <p>
-                        <a class="footer_column2_email" href="contactus@theteashop.com.sg">contactus@theteashop.com.sg</a>
-                    </p>
+                <div class="footer_button">
+                    <a class="footer_iconlink" href="https://www.twitter.com/">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                    <button class="footer_button_twitter">
+                        Twitter
+                    </button>
+                </div>
+
+                <div class="footer_button">
+                    <a class="footer_iconlink" href="https://www.instagram.com/">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <button class="footer_button_instagram">
+                        Instagram
+                    </button>
                 </div>
             </div>
+        </div>
 
-            <!-- ================= Column 3 ================= -->
-            <div class="footer_column3">
-                <p class="footer_column3_about">
-                    <span>About Us</span>
-                    <strong>The Tea Shop</strong> is passionately dedicated to modernising 
-                    tea appreciation and sharing our knowledge about tea culture.
-                    We aim to share the health benefits of tea drinking with our 
-                    customers and aspire for our customers to appreciate our 
-                    specially curated tea blends.
-                </p>
-                <div class="footer_icons">
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://www.facebook.com/">
-                            <i class="uil uil-facebook-f"></i>
-                        </a>
-                        <button class="footer_button_facebook">
-                            Facebook
-                        </button>
-                    </div>
-           
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://www.twitter.com/">
-                            <i class="uil uil-twitter-alt"></i>
-                        </a>
-                        <button class="footer_button_twitter">
-                            Twitter
-                        </button>
-                    </div>
-           
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://www.instagram.com/">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                        <button class="footer_button_instagram">
-                            Instagram
-                        </button>
-                    </div>
-                 </div>
+        <div class="altfooter_parent">
+            <div class="altfooter_icons">
+                <div class="footer_button">
+                    <a class="footer_iconlink" href="https://www.facebook.com/">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <button class="footer_button_facebook">
+                        Facebook
+                    </button>
+                </div>
+
+                <div class="footer_button">
+                    <a class="footer_iconlink" href="https://www.twitter.com/">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                    <button class="footer_button_twitter">
+                        Twitter
+                    </button>
+                </div>
+
+                <div class="footer_button">
+                    <a class="footer_iconlink" href="https://www.instagram.com/">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <button class="footer_button_instagram">
+                        Instagram
+                    </button>
+                </div>
             </div>
+        </div>
+        <p class="footer_copyright">Copyright © <strong>Reginald Tan</strong> 2022 - All rights reserved</p>
+    </footer>
 
-            <div class="altfooter_parent">
-                <div class="altfooter_icons">
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://www.facebook.com/">
-                            <i class="uil uil-facebook-f"></i>
-                        </a>
-                        <button class="footer_button_facebook">
-                            Facebook
-                        </button>
-                    </div>
-           
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://www.twitter.com/">
-                            <i class="uil uil-twitter-alt"></i>
-                        </a>
-                        <button class="footer_button_twitter">
-                            Twitter
-                        </button>
-                    </div>
-           
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://www.instagram.com/">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                        <button class="footer_button_instagram">
-                            Instagram
-                        </button>
-                    </div>
-                 </div>
-            </div>
-            <p class="footer_copyright">Copyright © <strong>Reginald Tan</strong> 2022 - All rights reserved</p>
-        </footer>
+    <!-- ========================== SCROLLUP ========================== -->
+    <a href="#top" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
-        <!-- ========================== SCROLLUP ========================== -->
-        <a href="#top" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
-        </a>
-
-        <!-- ========================== EXTERNAL FILES ========================== -->
-        <script src="assets\javascript\main.js"></script>
-    </body>
+    <!-- ========================== EXTERNAL FILES ========================== -->
+    <script src="Javascript/contactus.js" defer></script>
+</body>
 
 </html>

@@ -572,13 +572,13 @@ input[type="checkbox"]{
     margin: 0 auto;
 }
 
-.google_maps{
+#map {
     width: 100%;
     height: 100%;
     max-height: 600px;
     border: none;
     border-radius: 10px;
-    padding-left: 3rem;
+    padding-left: 5rem;
 }
 .contact_faq_column1{
     display: flex;
@@ -2149,6 +2149,8 @@ footer{
     pointer-events: all;
   }
   
+  /* ====================== RESPONSIVENESS ====================== */
+  /* ================ Laptops ================ */
   @media (max-width: 870px) {
     .login_container {
       min-height: 800px;
@@ -2243,6 +2245,7 @@ footer{
     }
   }
   
+/* ================ Mobile ================ */
   @media (max-width: 480px) {
     form {
       padding: 0 1.5rem;
@@ -2268,4 +2271,5 @@ footer{
       left: 50%;
     }
   }
-  
+
+/* ====================== PAGE: About Us ====================== */

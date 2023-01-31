@@ -5,7 +5,6 @@
     /* ====================== WEBPAGE VARIABLES ====================== */
     --heading-font: font-family: 'Poppins', sans-serif;
     --body-font: 'avenir_next_lt_proregular';
-li
     --heading-font-colour: #FFFFFF;
     --body-font-colour: #FFFFFF;
 
@@ -53,7 +52,7 @@ li
 
 /* ====================== WEBPAGE ====================== */
 body{
-    background-color: var(--special-orange-strong);
+
     font-family: var(--body-font);
     list-style: none;
     width: 100%;
@@ -94,8 +93,6 @@ ul {
 }
 
 .navbar-header {
-	min-height: 100vh;
-	background: url("assets/media/TheTeaShop - poster 1.png") no-repeat center;
 	background-size: cover;
 }
 
@@ -251,13 +248,14 @@ ul {
 
 /* ================ Welcome ================ */
 .home_welcome{
+    margin-top: 200px;
     background-color: #FFFFFF;
     padding-bottom: 1rem;
     width: 100%;
 }
 
 .home_image_grid_poster{
-    padding-top: 120px;
+    position: relative;
     width: 75%;
     margin: 0 auto 1rem auto;
 }
@@ -279,8 +277,9 @@ ul {
 .home_image_postertext{
     position: absolute;
     z-index: 1;
-    left: 60%;
-    top: 30%;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: #FFFFFF;
     width: 25%;
 }

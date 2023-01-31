@@ -163,7 +163,7 @@ ul {
 }
 
 #navbar a:hover {
-	color: #E54416;
+	color: var(--special-orange-strong);
 }
 
 .input-wrap {
@@ -181,7 +181,7 @@ ul {
 }
 
 #navbar .fa-bars:hover {
-	color: #E54416;
+	color: var(--special-orange-strong);
 }
 
 .menu {
@@ -787,7 +787,6 @@ ul {
 footer {
 	width: 100%;
 	position: absolute;
-	bottom: 0;
 	background-color: var(--special-orange-strong);
 	color: var(--special-white);
 	padding: 100px 0 30px;
@@ -850,7 +849,7 @@ footer h4 {
 }
 
 footer p {
-	font-size: 1em;
+	font-size: 1.5em;
 }
 
 .footer-col form {

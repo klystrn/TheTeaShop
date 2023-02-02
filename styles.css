@@ -468,6 +468,55 @@ ul {
 	display: none;
 }
 
+/* ====================== PAGE: ABOUT ====================== */
+.about-body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--special-white);
+}
+
+.about-section {
+	background: url("assets/media/product-renders/TheHouseSpecials - TheClassic - FrontView.jpg") no-repeat left;
+	width: 100%;
+	background-size: 55%;
+	background-color: var(--special-orange-strong);
+	overflow: hidden;
+	padding: 100px 0;
+}
+
+.about-inner-container {
+	width: 55%;	
+	float: right;
+	background-color: var(--special-white);
+	padding: 150px;
+}
+
+.about-inner-container h1 {
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+.about-text {
+	font-size: 13px;
+	color: black;
+	line-height: 30px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
+
+.skills {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+
+
+
 
 /* ====================== NEW FOOTER ====================== */
 
@@ -731,8 +780,7 @@ hr {
     body{
         font-size: var(--desktops-font-size);
     }
-
-
+	
     .home_news_poster1{
         display: block;
         padding-top: 100px;
@@ -801,7 +849,10 @@ hr {
         object-fit: cover;
         object-position: 50% 40%;
     }
-
+/* ================ ABOUT PAGE ================ */
+	.about-inner-container {
+		padding: 80px;
+	}
 }
 /* ================ Laptops ================ */
 @media screen and (max-width: 1024px) {
@@ -865,6 +916,17 @@ hr {
         object-fit: cover;
         object-position: 50% 40%;
     }
+	
+	/* ================ ABOUT PAGE ================ */
+	
+	.about-section {
+		background-size: 100%;
+		padding: 100px 40px;
+	}
+	
+	.about-inner-container {
+		width: 100%;
+	}
 }
 
 /* ================ Tablets ================ */
@@ -987,6 +1049,16 @@ hr {
     .home_image_postertext .text{
         font-size: calc(var(--tablets-font-size) - 0.34rem);
     }
+	
+	/* ================ ABOUT PAGE ================ */
+	
+	.about-section {
+		padding: 0;
+	}
+	
+	.about-inner-container {
+		padding: 60px;
+	}
 }
 
 @media screen and (max-width: 570px){

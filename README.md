@@ -105,6 +105,15 @@ Our 2 product lines allow YOU to choose between a strong, aromatic kick or a del
 4. 14/01/2023
     - Fixed the responsive for the text on the News & Promotions section  __Jerel__
 
+5. 31/01/2023
+    - Added navigation bar __Jerel__
+
+6. 1/02/2023
+    - Added Swiper.Js in index.html 
+    - Fixed the mobile view of the home page
+    - Edited the footer contents __Jerel__
+
+
 ## Design ##
 ### Colour Scheme ###
 - Orange Dark (#E68D19)

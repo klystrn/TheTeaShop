@@ -182,7 +182,7 @@ ul {
 }
 
 .menu {
-	background: var(--special-white);
+	background: rgba(255,255,255, 0.7);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1696,6 +1696,10 @@ hr {
     body{
         font-size: var(--mobile-font-size);
     }
+	/* ================ NAVIGATION ================ */
+	.menu {
+		background-color: var(--special-white);
+	}
 	
     .home_image_postertext{
         position: absolute;

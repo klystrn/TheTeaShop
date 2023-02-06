@@ -1,314 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>TheTeaShop - Product Catalogue</title>
+<link rel="icon" href="assets\media\TheTeaShop - logo.jpg">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- ========================== STYLES ========================== -->
+<link rel="stylesheet" href="styles.css">
+	<!-- FONT AWESOME --> 
+<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymouse"></script>
+<link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link rel="stylesheet" href="assets\fonts\Avenir Next\avenir-next.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
 
-        <title>TheTeaShop - Product Catalogue</title>
-        <link rel="icon" href="assets\media\TheTeaShop - logo.jpg">
-        
-        <!-- ========================== STYLES ========================== -->
-        <link rel="stylesheet" href="assets\css\styles.css"> 
-        <link rel="stylesheet" href="assets\fonts\Avenir Next\avenir-next.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    </head>
+<body>
+<!-- ========================== NAVIGATION BAR ========================== -->
+<header class="navbar-header">
+  <nav id="navbar">
+    <div class="menu">
+      <div><img src="assets/media/TheTeaShop - logo.jpg" class="logo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="social-media">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+        <form>
+          <div class="input-wrap">
+            <input type="search" placeholder="Search.." class="input-search">
+            <button type="submit" class="nav-btn"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="nav-container"> <a href="#" class="brand">TheTeaShop</a>
+      <div class="container-inner">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Catalogue</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <form>
+          <div class="input-wrap">
+            <li class="user"><a href="#"><i class="fas fa-user"></i></a></li>
+            <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+          </div>
+        </form>
+      </div>
+      <i class="fas fa-bars" id="menu-btn"></i> </div>
+  </nav>
+</header>
 
-    <body>
-        <!-- ========================== NAVIGATION BAR ========================== -->
-        <header>
-            <nav>
-                <div class="navigation_grid">
-                    <div class="navigation_gridleft">
-                        <div class="navigation_gridleft_column1">
-                            <a href="index.html">
-                                <img class="navigation_logo" src="assets\media\TheTeaShop - logo.jpg" alt="TheTeaShop Logo">
-                            </a>
-                        </div>
-    
-                        <div class="navigation_gridleft_column2">
-                            <h1 class="navigation_heading">The Tea Shop</h1>
-                        </div>
-                        <button class="navigation_user">
-                            <i class="uil uil-user"></i>
-                        </button>
-                        <button class="navigation_shoppingcart">
-                            <i class="il uil-shopping-bag"></i>
-                        </button>
-                    </div>
-                    
-                    <!-- ================= Hamburger Menu ================= -->
-                    <div class="navigation_hamburger_menu">
-                        <input type="checkbox" id="active">
-                        <label for="active" class="hamburger">
-                            <i class="fas fa-bars"></i>
-                        </label>
-                        <div class="navigation_menu">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="ProductCatalogue.html">Products</a></li>
-                                <li><a href="ContactUs.html">Reach Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!-- ========================== PAGE: PRODUCTS ========================== -->
-
-        <!-- ================= Product Catalogue ================= -->
-        <section class="product_catalogue" id="top">
-            <h2 class="product_catalogue_header">Our Products</h2>
-            <div class="product_grid">
-
-                <!-- ================= Product 1 - HS Earl Grey ================= -->
-                <div class="product_grid_item">
-                    <img class="product_item_image" src="assets\media\product-renders\TheHouseSpecials - EarlGrey.jpg">
-                    <div class="product_item_details">
-                        <p class="product_item_details_name">The House Specials <br> <span class="item_title">Earl Grey</span></p>
-                        <p class="product_item_details_description">A classic tea blend flavoured flawlessly made with Oil of Bergamot and Black Tea</p>
-                    </div>
-                    <p class="product_item_price">SGD$19.90</p>
-                    <button class="product_item_add-to-cart">
-                        <i class="uil uil-plus cart_icon"></i>
-                        Add To Cart
-                    </button>
-                </div>
-
-                <!-- ================= Product 2 - HS English Breakfast Tea ================= -->
-                <div class="product_grid_item">
-                    <img class="product_item_image" src="assets\media\product-renders\TheHouseSpecials - EnglishBreakfastTea.jpg" >
-                    <div class="product_item_details">
-                        <p class="product_item_details_name">The House Specials <br> <span class="item_title">English Breakfast Tea</span></p>
-                        <p class="product_item_details_description">Full-bodied, robust, rich and blended flavours paired with milk and sugar</p>
-                    </div>
-                    <p class="product_item_price">SGD$19.90</p>
-                    <button class="product_item_add-to-cart">
-                        <i class="uil uil-plus cart_icon"></i>
-                        Add To Cart
-                    </button>
-                </div>
-
-                <!-- ================= Product 3 - HS Matcha ================= -->
-                <div class="product_grid_item">
-                    <img class="product_item_image" src="assets\media\product-renders\TheHouseSpecials - Matcha.jpg">
-                    <div class="product_item_details">
-                        <p class="product_item_details_name">The House Specials <br> <span class="item_title">Matcha</span></p>
-                        <p class="product_item_details_description">Finely ground matcha powder of specially grown East Asian green tea leaves</p>
-                    </div>
-                    <p class="product_item_price">SGD$19.90</p>
-                    <button class="product_item_add-to-cart">
-                        <i class="uil uil-plus cart_icon"></i>
-                        Add To Cart
-                    </button>
-                </div>
-
-                <!-- ================= Product 4 - FF Bliss ================= -->
-                <div class="product_grid_item">
-                    <img class="product_item_image" src="assets\media\product-renders\FloralFantasy - bliss.jpg">
-                    <div class="product_item_details">
-                        <p class="product_item_details_name">Floral Fantasy <br> <span class="item_title">Bliss</span></p>
-                        <p class="product_item_details_description">A delightful blend of cosy and calm for relaxation <br><span class="item_ingredients">Linen flowers, Vanilla bean extract</span></p>
-                    </div>
-                    <p class="product_item_price">SGD$24.90</p>
-                    <button class="product_item_add-to-cart">
-                        <i class="uil uil-plus cart_icon"></i>
-                        Add To Cart
-                    </button>
-                </div>
-
-                <!-- ================= Product 5 - FF Bloom ================= -->
-                <div class="product_grid_item">
-                    <img class="product_item_image" src="assets\media\product-renders\FloralFantasy - bloom.jpg">
-                    <div class="product_item_details">
-                        <p class="product_item_details_name">Floral Fantasy <br> <span class="item_title">Bloom</span></p>
-                        <p class="product_item_details_description">Floral and fresh tones for inner peace <br><span class="item_ingredients">Rosehip, Rose petals, Lemon balm</span></p>
-                    </div>
-                    <p class="product_item_price">SGD$24.90</p>
-                    <button class="product_item_add-to-cart">
-                        <i class="uil uil-plus cart_icon"></i>
-                        Add To Cart
-                    </button>
-                </div>
-
-                <!-- ================= Product 6 - FF Reverie ================= -->
-                <div class="product_grid_item">
-                    <img class="product_item_image" src="assets\media\product-renders\FloralFantasy - reverie.jpg">
-                    <div class="product_item_details">
-                        <p class="product_item_details_name">Floral Fantasy <br> <span class="item_title">Reverie</span></p>
-                        <p class="product_item_details_description">Delicate fushion ingredients for focus <br><span class="item_ingredients">Lavender, Earl grey</span></p>
-                    </div>
-                    <p class="product_item_price">SGD$24.90</p>
-                    <button class="product_item_add-to-cart">
-                        <i class="uil uil-plus cart_icon"></i>
-                        Add To Cart
-                    </button>
-                </div>
-
-                <!-- ================= Product 7 - GP The Tea Gift Pack ================= -->
-                <div class="product_grid_item">
-                    <img class="product_item_image" src="assets\media\product-renders\TheHouseSpecials - TeaGiftPack.jpg">
-                    <div class="product_item_details">
-                        <p class="product_item_details_name">The House Specials<br> <span class="item_title">The Tea Gift Pack</span></p>
-                        <p class="product_item_details_description">4 Packs of 3 Teas for complete convalescence<br><span class="item_ingredients">Earl Grey, English Breakfast, Mactha</span></p>
-                    </div>
-                    <p class="product_item_price">SGD$189.90</p>
-                    <button class="product_item_add-to-cart">
-                        <i class="uil uil-plus cart_icon"></i>
-                        Add To Cart
-                    </button>
-                </div>
-
-                <!-- ================= Product 8 - GP The Classic Tea Gift Pack ================= -->
-                <div class="product_grid_item">
-                    <img class="product_item_image" src="assets\media\product-renders\TheHouseSpecials - TheClassic - FrontView.jpg">
-                    <div class="product_item_details">
-                        <p class="product_item_details_name">The House Specials<br> <span class="item_title">The Classic Tea Gift Pack</span></p>
-                        <p class="product_item_details_description">2 Packs of 3 Teas for absolute relaxation<br><span class="item_ingredients">Earl Grey, English Breakfast, Mactha</span></p>
-                    </div>
-                    <p class="product_item_price">SGD$99.90</p>
-                    <button class="product_item_add-to-cart">
-                        <i class="uil uil-plus cart_icon"></i>
-                        Add To Cart
-                    </button>
-                </div>
-
-                <!-- ================= Product 9 - GP Bouquet Of Dreams ================= -->
-                <div class="product_grid_item">
-                    <img class="product_item_image" src="assets\media\product-renders\FloralFantasy - BouquetOfDreams.png">
-                    <div class="product_item_details">
-                        <p class="product_item_details_name">Floral Fantasy<br> <span class="item_title">Bouquet of Dreams</span></p>
-                        <p class="product_item_details_description">1 Packs of 3 Teas for those magical nights<br><span class="item_ingredients">Bloom, Bliss, Reverie</span></p>
-                    </div>
-                    <p class="product_item_price">SGD$69.90</p>
-                    <button class="product_item_add-to-cart">
-                        <i class="uil uil-plus cart_icon"></i>
-                        Add To Cart
-                    </button>
-                </div>
-                
+<!-- ========================== PAGE: PRODUCTS ========================== -->
+	<div class="product-body">
+<div class="trending">
+  <div class="product-container">
+    <div class="product-wrapper">
+      <div class="sectop flexitem">
+        <h2><span class="product-circle"></span><span>Products</span></h2>
+      </div>
+      <div class="product-column">
+        <div class="flexwrap">
+          <div class="row products big"> 
+			  <div class="item">
+            <div class="offer">
+            <p>Offer Ends At</p>
+            <ul class="product-flexcenter">
+              <li>1</li>
+              <li>5</li>
+              <li>27</li>
+              <li>60</li>
+            </ul>
+				</div>
+            <div class="product-media">
+              <div class="product-image"> <a href="#"><img src="assets/media/product-renders/FloralFantasy - bliss.jpg" alt=""> </a> </div>
+              <div class="hoverable">
+                <ul>
+                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                </ul>
+              </div>
+              <div class="discount circle flexcenter"><span>31%</span></div>
             </div>
-        </section>
-        
-
-        <!-- ========================== FOOTER ========================== -->
-        <footer class="footer" id="footer">
-
-            <!-- ================= Column 1 ================= -->
-            <div class="footer_column1">
-                <h3 class="footer_column1_header">The Tea Shop</h3>
-                <p class="footer_links">
-                    <a class="footer_link_content" href="index.html">Home</a>
-                    |
-                    <a class="footer_link_content" href="ProductCatalogue.html">Products</a>
-                    |
-                    <a class="footer_link_content" href="ContactUs.html">Contact</a> 
-                </p>
-            </div>
-            
-            <!-- ================= Column 2 ================= -->
-            <div class="footer_column2">
-                <div>
-                    <i class="uil uil-location-point footer_column2_icon"></i>
-                    <p>#02-04, The Star Vista, Singapore 138617 <span>1 Vista Exchange Green, Singapore</span></p>
+            <div class="product-content">
+              <div class="rating">
+                <div class="stars"><i class="ri-star-fill"></i> </div>
+                <span class="mini-text">(2,533)</span> </div>
+              <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
+              <div class="stock mini-text">
+                <div class="qty"> <span>Stock: <strong class="qty-available">107</strong></span> <span>Sold: <strong class="qty-sold">23</strong></span> </div>
+                <div class="bar">
+                  <div class="available"></div>
                 </div>
-    
-                <div>
-                    <i class="uil uil-phone-alt footer_column2_icon"></i>
-                    <p>+65 6694 3127</p>
-                </div>
-
-                <div>
-                    <i class="uil uil-envelope-alt footer_column2_icon"></i>
-                    <p>
-                        <a class="footer_column2_email" href="contactus@theteashop.com.sg">contactus@theteashop.com.sg</a>
-                    </p>
-                </div>
+              </div>
             </div>
-
-            <!-- ================= Column 3 ================= -->
-            <div class="footer_column3">
-                <p class="footer_column3_about">
-                    <span>About Us</span>
-                    <strong>The Tea Shop</strong> is passionately dedicated to modernising 
-                    tea appreciation and sharing our knowledge about tea culture.
-                    We aim to share the health benefits of tea drinking with our 
-                    customers and aspire for our customers to appreciate our 
-                    specially curated tea blends.
-                </p>
-                <div class="footer_icons">
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://www.facebook.com/">
-                            <i class="uil uil-facebook-f"></i>
-                        </a>
-                        <button class="footer_button_facebook">
-                            Facebook
-                        </button>
-                    </div>
-           
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://www.twitter.com/">
-                            <i class="uil uil-twitter-alt"></i>
-                        </a>
-                        <button class="footer_button_twitter">
-                            Twitter
-                        </button>
-                    </div>
-           
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://www.instagram.com/">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                        <button class="footer_button_instagram">
-                            Instagram
-                        </button>
-                    </div>
-                 </div>
+            </div> 
+			</div>
+          <div class="row products mini">
+			<div class="item">
+            <div class="product-media">
+              <div class="product-thumbnail object-cover"> 
+				  <a href="#">
+					  <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt=""> 
+				  </a> 
+				</div>
+              <div class="hoverable">
+                <ul>
+                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                </ul>
+              </div>
+              <div class="discount circle flexcenter"><span>32%</span></div>
             </div>
-
-            <div class="altfooter_parent">
-                <div class="altfooter_icons">
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://www.facebook.com/">
-                            <i class="uil uil-facebook-f"></i>
-                        </a>
-                        <button class="footer_button_facebook">
-                            Facebook
-                        </button>
-                    </div>
-           
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://www.twitter.com/">
-                            <i class="uil uil-twitter-alt"></i>
-                        </a>
-                        <button class="footer_button_twitter">
-                            Twitter
-                        </button>
-                    </div>
-           
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://www.instagram.com/">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                        <button class="footer_button_instagram">
-                            Instagram
-                        </button>
-                    </div>
-                 </div>
+            <div class="product-content">
+              
+              <h3 class="main-links"><a href="#">Bloom</a></h3>
+				<div class="rating">
+                <div class="stars"> </div>
+                <span class="mini-text">(2,533)</span> </div>
+              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
+			<div class="mini-text">
+				<p>2975 Sold</p>
+				<p>Free Shipping</p>
+				</div>
             </div>
-            <p class="footer_copyright">Copyright © <strong>Reginald Tan</strong> 2022 - All rights reserved</p>
-        </footer>
+            </div> 
+			  <div class="item">
+            <div class="product-media">
+              <div class="product-thumbnail object-cover"> 
+				  <a href="#">
+					  <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt=""> 
+				  </a> 
+				</div>
+              <div class="hoverable">
+                <ul>
+                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                </ul>
+              </div>
+              <div class="discount circle flexcenter"><span>32%</span></div>
+            </div>
+            <div class="product-content">
+              
+              <h3 class="main-links"><a href="#">Bloom</a></h3>
+				<div class="rating">
+                <div class="stars"> </div>
+                <span class="mini-text">(2,533)</span> </div>
+              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
+			<div class="mini-text">
+				<p>2975 Sold</p>
+				<p>Free Shipping</p>
+				</div>
+            </div>
+            </div>
+			  <div class="item">
+            <div class="product-media">
+              <div class="product-thumbnail object-cover"> 
+				  <a href="#">
+					  <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt=""> 
+				  </a> 
+				</div>
+              <div class="hoverable">
+                <ul>
+                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                </ul>
+              </div>
+              <div class="discount circle flexcenter"><span>32%</span></div>
+            </div>
+            <div class="product-content">
+              
+              <h3 class="main-links"><a href="#">Bloom</a></h3>
+				<div class="rating">
+                <div class="stars"> </div>
+                <span class="mini-text">(2,533)</span> </div>
+              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
+			<div class="mini-text">
+				<p>2975 Sold</p>
+				<p>Free Shipping</p>
+				</div>
+            </div>
+            </div>
+			  <div class="item">
+            <div class="product-media">
+              <div class="product-thumbnail object-cover"> 
+				  <a href="#">
+					  <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt=""> 
+				  </a> 
+				</div>
+              <div class="hoverable">
+                <ul>
+                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                </ul>
+              </div>
+              <div class="discount circle flexcenter"><span>32%</span></div>
+            </div>
+            <div class="product-content">
+              
+              <h3 class="main-links"><a href="#">Bloom</a></h3>
+				<div class="rating">
+                <div class="stars"> </div>
+                <span class="mini-text">(2,533)</span> </div>
+              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
+			<div class="mini-text">
+				<p>2975 Sold</p>
+				<p>Free Shipping</p>
+				</div>
+            </div>
+            </div>
+			</div>
+          <div class="row products mini">
+			<div class="item">
+            <div class="product-media">
+              <div class="product-thumbnail object-cover"> 
+				  <a href="#">
+					  <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt=""> 
+				  </a> 
+				</div>
+              <div class="hoverable">
+                <ul>
+                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                </ul>
+              </div>
+              <div class="discount circle flexcenter"><span>32%</span></div>
+            </div>
+            <div class="product-content">
+              
+              <h3 class="main-links"><a href="#">Reverie</a></h3>
+				<div class="rating">
+                <div class="stars"> </div>
+                <span class="mini-text">(2,533)</span> </div>
+              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
+			<div class="mini-text">
+				<p>2975 Sold</p>
+				<p>Free Shipping</p>
+				</div>
+            </div>
+            </div>
+			  <div class="item">
+            <div class="product-media">
+              <div class="product-thumbnail object-cover"> 
+				  <a href="#">
+					  <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt=""> 
+				  </a> 
+				</div>
+              <div class="hoverable">
+                <ul>
+                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                </ul>
+              </div>
+              <div class="discount circle flexcenter"><span>32%</span></div>
+            </div>
+            <div class="product-content">
+              
+              <h3 class="main-links"><a href="#">Reverie</a></h3>
+				<div class="rating">
+                <div class="stars"> </div>
+                <span class="mini-text">(2,533)</span> </div>
+              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
+			<div class="mini-text">
+				<p>2975 Sold</p>
+				<p>Free Shipping</p>
+				</div>
+            </div>
+            </div>
+			  <div class="item">
+            <div class="product-media">
+              <div class="product-thumbnail object-cover"> 
+				  <a href="#">
+					  <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt=""> 
+				  </a> 
+				</div>
+              <div class="hoverable">
+                <ul>
+                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                </ul>
+              </div>
+              <div class="discount circle flexcenter"><span>32%</span></div>
+            </div>
+            <div class="product-content">
+              
+              <h3 class="main-links"><a href="#">Reverie</a></h3>
+				<div class="rating">
+                <div class="stars"> </div>
+                <span class="mini-text">(2,533)</span> </div>
+              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
+			<div class="mini-text">
+				<p>2975 Sold</p>
+				<p>Free Shipping</p>
+				</div>
+            </div>
+            </div>
+			  <div class="item">
+            <div class="product-media">
+              <div class="product-thumbnail object-cover"> 
+				  <a href="#">
+					  <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt=""> 
+				  </a> 
+				</div>
+              <div class="hoverable">
+                <ul>
+                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                </ul>
+              </div>
+              <div class="discount circle flexcenter"><span>32%</span></div>
+            </div>
+            <div class="product-content">
+              
+              <h3 class="main-links"><a href="#">Reverie</a></h3>
+				<div class="rating">
+                <div class="stars"> </div>
+                <span class="mini-text">(2,533)</span> </div>
+              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
+			<div class="mini-text">
+				<p>2975 Sold</p>
+				<p>Free Shipping</p>
+				</div>
+            </div>
+            </div>
+			
+			</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+		</div>
 
-        <!-- ========================== SCROLLUP ========================== -->
-        <a href="#top" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
-        </a>
+<!-- ========================== NEW FOOTER ========================== -->
+<footer>
+  <div class="footer-row">
+    <div class="footer-col"><img src="assets/media/TheTeaShop - alt logo.jpg" class="footer-logo">
+      <p>The Tea Shop is passionately dedicated to modernising tea appreciation and sharing our knowledge
+        about tea culture. We aim to share the health benefits of tea drinking with our customers and aspire
+        for our customers to appreciate our specially curated tea blends.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Store
+        <div class="underline"><span></span></div>
+      </h3>
+      <p>The Star Vista Atrium</p>
+      <p>Singapore</p>
+      <p>138620, #02-48</p>
+      <p class="footer-email-id">contactus@theteashop.com.sg</p>
+      <h4>+65 6694 3127</h4>
+    </div>
+    <div class="footer-col">
+      <h3>Links
+        <div class="underline"><span></span></div>
+      </h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Newsletter
+        <div class="underline"><span></span></div>
+      </h3>
+      <form>
+        <i class="fa-regular fa-envelope"></i>
+        <input type="email" placeholder="Enter Your Email" required>
+        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+      <div class="footer-social-icons"> <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-youtube"></i></a> </div>
+    </div>
+  </div>
+  <hr>
+  <p class="footer-copyright">&copy; 2023 TheTeaShop | All Rights Reserved &#174;</p>
+</footer>
 
-        <!-- ========================== EXTERNAL FILES ========================== -->
-        <script src="assets\javascript\main.js"></script>
-    </body>
+<!-- ========================== SCROLLUP ========================== --> 
+<a href="#top" class="scrollup" id="scroll-up"> <i class="uil uil-arrow-up scrollup__icon"></i> </a> 
 
+<!-- ========================== EXTERNAL FILES ========================== --> 
+<script src="assets\javascript\main.js"></script>
+</body>
 </html>

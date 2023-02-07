@@ -56,6 +56,7 @@ body{
     font-family: var(--body-font);
     list-style: none;
     width: 100%;
+	
 }
 
 *{
@@ -557,6 +558,7 @@ ul {
 	margin-right: auto;
 	
 }
+
 .about-wrapper-body-2 {
 	display:none;
 }
@@ -592,13 +594,43 @@ ul {
 .contactus_container { 
     position: relative; 
     width: 100%; 
-    padding: 200px 100px; 
+    padding: 200px 100px 0 100px; 
 } 
+
+.about-wrapper-body-4 {
+	min-height: 70vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px;
+	background-color: var(--special-orange-light);
+	
+}
+.about-text-box-1 {
+	margin: auto;
+}
+.about-text-box-1 p, .about-text-box-1 h2 {
+	color: var(--special-white);
+}
+
+.about-text-box-1 hr {
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid var(--special-white);
+	margin: auto auto 20px auto;
+}
+
+.about-text-box-1 i {
+	margin-right: 10px;
+}
  
 .contactus_title { 
     display: flex; 
     justify-content: center; 
     align-items: center; 
+	text-align: center;
     font-size: 2.5rem; 
 } 
  
@@ -630,9 +662,6 @@ ul {
 .info{ 
     grid-area: info; 
     display: inline-block;
-} 
-.map{ 
-    grid-area: map; 
 } 
  
 .contact{ 
@@ -733,7 +762,7 @@ ul {
 
 .sci
 {
-    margin-top: 40px;
+    margin: 40px auto auto auto;
     display: flex;
 }
 
@@ -745,19 +774,21 @@ ul {
 
 .sci li a
 {
-    color: var(--special-grey-light);
+    color: var(--special-white);
     font-size: 2rem;
 }
 
 .sci li a:hover
 {
-    color: var(--special-white);
+    color: var(--special-grey-light);
     font-size: 2rem;
 }
 
 #map{
-    width: 600px;
-    height: 600px;
+    height: 100%;
+	width: 100%;
+	border-radius: 10px;
+	border: 2px solid var(--special-white);
 }
 
  
@@ -1157,7 +1188,6 @@ footer {
 	background-color: var(--special-orange-strong);
 	color: var(--special-white);
 	padding: 100px 0 30px;
-	border-top-left-radius: 125px;
 	font-size: 13px;
 	line-height: 20px;
 }
@@ -1285,16 +1315,7 @@ hr {
 	overflow: hidden;
 }
 
-.underline span {
-	width: 15px;
-	height: 100%;
-	background: var(--special-orange-light);
-	border-radius: 3px;
-	position: absolute;
-	top: 0;
-	left: 10px;
-	animation: moving 2s linear infinite;
-}
+
 
 @keyframes moving {
 	0% {
@@ -1707,6 +1728,17 @@ hr {
     .home_image_postertext .text{
         font-size: calc(var(--tablets-font-size) - 0.34rem);
     }
+	/* ================ CONTACT US PAGE ================ */
+	.about-wrapper-body-4 {
+
+	grid-template-columns: 1fr;
+		min-height: 100vh;
+}
+	#map{
+		margin-top: -50px;
+    height: 100%;
+	width: 100%;
+}
 	
 	/* ================ ABOUT PAGE ================ */
 	

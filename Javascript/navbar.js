@@ -7,7 +7,7 @@ const navbar = document.getElementById('navbar');
 const menu = document.querySelector('.menu');
 
 //PX offset when the navbar activates
-const offset = 500;
+const offset = 150;
 
 //Add click event to menu button
 menBtn.addEventListener("click", () => {

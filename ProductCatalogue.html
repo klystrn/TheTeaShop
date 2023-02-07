@@ -1,415 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>TheTeaShop - Product Catalogue</title>
-<link rel="icon" href="assets\media\TheTeaShop - logo.jpg">
 
-<!-- ========================== STYLES ========================== -->
-<link rel="stylesheet" href="styles.css">
-	<!-- FONT AWESOME --> 
-<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymouse"></script>
-<link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-<link rel="stylesheet" href="assets\fonts\Avenir Next\avenir-next.css">
-<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TheTeaShop - Product Catalogue</title>
+  <link rel="icon" href="assets\media\TheTeaShop - logo.jpg">
+
+  <!-- ========================== STYLES ========================== -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/0b8cc83861.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="assets\fonts\Avenir Next\avenir-next.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- MapBox -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+
+
 </head>
 
 <body>
-<!-- ========================== NAVIGATION BAR ========================== -->
-<header class="navbar-header">
-  <nav id="navbar">
-    <div class="menu">
-      <div><img src="assets/media/TheTeaShop - logo.jpg" class="logo">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">What's New</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Store</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <ul class="social-media">
-          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-        </ul>
-        <form>
-          <div class="input-wrap">
-            <input type="search" placeholder="Search.." class="input-search">
-            <button type="submit" class="nav-btn"><i class="fas fa-search"></i></button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="nav-container"> <a href="#" class="brand">TheTeaShop</a>
-      <div class="container-inner">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Catalogue</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-        <form>
-          <div class="input-wrap">
-            <li class="user"><a href="#"><i class="fas fa-user"></i></a></li>
-            <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
-          </div>
-        </form>
-      </div>
-      <i class="fas fa-bars" id="menu-btn"></i> </div>
-  </nav>
-</header>
-
-<!-- ========================== PAGE: PRODUCTS ========================== -->
-	<div class="product-body">
-<div class="trending">
-  <div class="product-container">
-    <div class="product-wrapper">
-      <div class="sectop flexitem">
-        <h2><span class="product-circle"></span><span>Products</span></h2>
-      </div>
-      <div class="product-column">
-        <div class="flexwrap">
-          <div class="row products big"> 
-			  <div class="item">
-            <div class="offer">
-            <p>Offer Ends At</p>
-            <ul class="product-flexcenter">
-              <li>1</li>
-              <li>5</li>
-              <li>27</li>
-              <li>60</li>
-            </ul>
-				</div>
-            <div class="product-media">
-              <div class="product-image"> <a href="#"><img src="assets/media/product-renders/FloralFantasy - bliss.jpg" alt=""> </a> </div>
-              <div class="hoverable">
-                <ul>
-                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
-                </ul>
-              </div>
-              <div class="discount circle flexcenter"><span>31%</span></div>
+  <!-- ========================== NAVIGATION BAR ========================== -->
+  <header class="navbar-header">
+    <nav id="navbar">
+      <div class="menu">
+        <div><img src="assets/media/TheTeaShop - logo.jpg" class="logo">
+          <ul>
+            <li><a href="About.html">About</a></li>
+            <li><a href="ProductCatalogue.html">Product</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="social-media">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+          <form>
+            <div class="input-wrap">
+              <input type="search" placeholder="Search.." class="input-search">
+              <button type="submit" class="nav-btn"><i class="fas fa-search"></i></button>
             </div>
-            <div class="product-content">
-              <div class="rating">
-                <div class="stars"><i class="ri-star-fill"></i> </div>
-                <span class="mini-text">(2,533)</span> </div>
-              <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
-              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
-              <div class="stock mini-text">
-                <div class="qty"> <span>Stock: <strong class="qty-available">107</strong></span> <span>Sold: <strong class="qty-sold">23</strong></span> </div>
-                <div class="bar">
-                  <div class="available"></div>
+          </form>
+        </div>
+      </div>
+      <div class="nav-container"> <a href="#" class="brand">TheTeaShop</a>
+        <div class="container-inner">
+          <ul>
+            <li><a href="About.html">About</a></li>
+            <li><a href="ProductCatalogue.html">Product</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <form>
+            <div class="input-wrap">
+              <li class="user"><a href="#"><i class="fas fa-user"></i></a></li>
+              <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+            </div>
+          </form>
+        </div>
+        <i class="fas fa-bars" id="menu-btn"></i>
+      </div>
+      <!--Cart-->
+      <div class="product-cart">
+        <div class="product-cart-title">Your Cart</div>
+        <!--Content-->
+        <div class="product-cart-content">
+          <div class="product-cart-box">
+            <img src="assets/media/product-renders/FloralFantasy - bliss.jpg" alt="" class="product-cart-img">
+            <div class="product-detail-box">
+              <div class="cart-product-title">Bliss</div>
+              <div class="cart-product-price">$30</div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <!--Remove Cart-->
+            <i class="fa-solid fa-trash cart-remove"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ========================== PAGE: PRODUCTS ========================== -->
+  <div class="product-body">
+    <div class="trending">
+      <div class="product-container">
+        <div class="product-wrapper">
+          <div class="sectop flexitem">
+            <h2><span class="product-circle"></span><span>Products</span></h2>
+          </div>
+          <div class="product-column">
+            <div class="flexwrap">
+              <div class="row products big">
+                <div class="item">
+                  <div class="offer">
+                    <p>Offer Ends At</p>
+                    <ul class="product-flexcenter">
+                      <li>1</li>
+                      <li>5</li>
+                      <li>27</li>
+                      <li>60</li>
+                    </ul>
+                  </div>
+                  <div class="product-media">
+                    <div class="product-image">
+                      <a href="#"><img src="assets/media/product-renders/FloralFantasy - bliss.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount circle flexcenter"><span>31%</span></div>
+                  </div>
+                  <div class="product-content">
+                    <div class="rating">
+                      <div class="stars"><i class="ri-star-fill"></i> </div>
+                      <span class="mini-text">(2,533)</span>
+                    </div>
+                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                    <div class="price"> <span class="product-current">$129.99</span>
+                      <span class="normal mini-text">$189.99</span>
+                    </div>
+                    <div class="stock mini-text">
+                      <div class="qty"> <span>Stock: <strong class="qty-available">107</strong></span>
+                        <span>Sold: <strong class="qty-sold">23</strong></span>
+                      </div>
+
+                      <div class="bar">
+                        <div class="available"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            </div> 
-			</div>
-          <div class="row products mini">
-			<div class="item">
-            <div class="product-media">
-              <div class="product-thumbnail object-cover"> 
-				  <a href="#">
-					  <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt=""> 
-				  </a> 
-				</div>
-              <div class="hoverable">
-                <ul>
-                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
-                </ul>
+              <div class="row products mini">
+                <div class="item">
+                  <div class="product-media">
+                    <div class="product-thumbnail object-cover">
+                      <a href="#">
+                        <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount circle flexcenter"><span>32%</span></div>
+                  </div>
+                  <div class="product-content">
+
+                    <h3 class="main-links"><a href="#">Bloom</a></h3>
+                    <div class="rating">
+                      <div class="stars"> </div>
+                      <span class="mini-text">(2,533)</span>
+                    </div>
+                    <div class="price"> <span class="product-current">$129.99</span> <span
+                        class="normal mini-text">$189.99</span> </div>
+                    <div class="mini-text">
+                      <p>2975 Sold</p>
+                      <p>Free Shipping</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product-media">
+                    <div class="product-thumbnail object-cover">
+                      <a href="#">
+                        <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount circle flexcenter"><span>32%</span></div>
+                  </div>
+                  <div class="product-content">
+
+                    <h3 class="main-links"><a href="#">Bloom</a></h3>
+                    <div class="rating">
+                      <div class="stars"> </div>
+                      <span class="mini-text">(2,533)</span>
+                    </div>
+                    <div class="price"> <span class="product-current">$129.99</span> <span
+                        class="normal mini-text">$189.99</span> </div>
+                    <div class="mini-text">
+                      <p>2975 Sold</p>
+                      <p>Free Shipping</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product-media">
+                    <div class="product-thumbnail object-cover">
+                      <a href="#">
+                        <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount circle flexcenter"><span>32%</span></div>
+                  </div>
+                  <div class="product-content">
+
+                    <h3 class="main-links"><a href="#">Bloom</a></h3>
+                    <div class="rating">
+                      <div class="stars"> </div>
+                      <span class="mini-text">(2,533)</span>
+                    </div>
+                    <div class="price"> <span class="product-current">$129.99</span> <span
+                        class="normal mini-text">$189.99</span> </div>
+                    <div class="mini-text">
+                      <p>2975 Sold</p>
+                      <p>Free Shipping</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product-media">
+                    <div class="product-thumbnail object-cover">
+                      <a href="#">
+                        <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount circle flexcenter"><span>32%</span></div>
+                  </div>
+                  <div class="product-content">
+
+                    <h3 class="main-links"><a href="#">Bloom</a></h3>
+                    <div class="rating">
+                      <div class="stars"> </div>
+                      <span class="mini-text">(2,533)</span>
+                    </div>
+                    <div class="price"> <span class="product-current">$129.99</span> <span
+                        class="normal mini-text">$189.99</span> </div>
+                    <div class="mini-text">
+                      <p>2975 Sold</p>
+                      <p>Free Shipping</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="discount circle flexcenter"><span>32%</span></div>
-            </div>
-            <div class="product-content">
-              
-              <h3 class="main-links"><a href="#">Bloom</a></h3>
-				<div class="rating">
-                <div class="stars"> </div>
-                <span class="mini-text">(2,533)</span> </div>
-              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
-			<div class="mini-text">
-				<p>2975 Sold</p>
-				<p>Free Shipping</p>
-				</div>
-            </div>
-            </div> 
-			  <div class="item">
-            <div class="product-media">
-              <div class="product-thumbnail object-cover"> 
-				  <a href="#">
-					  <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt=""> 
-				  </a> 
-				</div>
-              <div class="hoverable">
-                <ul>
-                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
-                </ul>
+              <div class="row products mini">
+                <div class="item">
+                  <div class="product-media">
+                    <div class="product-thumbnail object-cover">
+                      <a href="#">
+                        <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount circle flexcenter"><span>32%</span></div>
+                  </div>
+                  <div class="product-content">
+
+                    <h3 class="main-links"><a href="#">Reverie</a></h3>
+                    <div class="rating">
+                      <div class="stars"> </div>
+                      <span class="mini-text">(2,533)</span>
+                    </div>
+                    <div class="price"> <span class="product-current">$129.99</span> <span
+                        class="normal mini-text">$189.99</span> </div>
+                    <div class="mini-text">
+                      <p>2975 Sold</p>
+                      <p>Free Shipping</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product-media">
+                    <div class="product-thumbnail object-cover">
+                      <a href="#">
+                        <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount circle flexcenter"><span>32%</span></div>
+                  </div>
+                  <div class="product-content">
+
+                    <h3 class="main-links"><a href="#">Reverie</a></h3>
+                    <div class="rating">
+                      <div class="stars"> </div>
+                      <span class="mini-text">(2,533)</span>
+                    </div>
+                    <div class="price"> <span class="product-current">$129.99</span> <span
+                        class="normal mini-text">$189.99</span> </div>
+                    <div class="mini-text">
+                      <p>2975 Sold</p>
+                      <p>Free Shipping</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product-media">
+                    <div class="product-thumbnail object-cover">
+                      <a href="#">
+                        <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount circle flexcenter"><span>32%</span></div>
+                  </div>
+                  <div class="product-content">
+
+                    <h3 class="main-links"><a href="#">Reverie</a></h3>
+                    <div class="rating">
+                      <div class="stars"> </div>
+                      <span class="mini-text">(2,533)</span>
+                    </div>
+                    <div class="price"> <span class="product-current">$129.99</span> <span
+                        class="normal mini-text">$189.99</span> </div>
+                    <div class="mini-text">
+                      <p>2975 Sold</p>
+                      <p>Free Shipping</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product-media">
+                    <div class="product-thumbnail object-cover">
+                      <a href="#">
+                        <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                      </ul>
+                    </div>
+
+                    <div class="discount circle flexcenter"><span>32%</span></div>
+                  </div>
+                  <div class="product-content">
+
+                    <h3 class="main-links"><a href="#">Reverie</a></h3>
+                    <div class="rating">
+                      <div class="stars"> </div>
+                      <span class="mini-text">(2,533)</span>
+                    </div>
+                    <div class="price"> <span class="product-current">$129.99</span> <span
+                        class="normal mini-text">$189.99</span> </div>
+                    <div class="mini-text">
+                      <p>2975 Sold</p>
+                      <p>Free Shipping</p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
-              <div class="discount circle flexcenter"><span>32%</span></div>
             </div>
-            <div class="product-content">
-              
-              <h3 class="main-links"><a href="#">Bloom</a></h3>
-				<div class="rating">
-                <div class="stars"> </div>
-                <span class="mini-text">(2,533)</span> </div>
-              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
-			<div class="mini-text">
-				<p>2975 Sold</p>
-				<p>Free Shipping</p>
-				</div>
-            </div>
-            </div>
-			  <div class="item">
-            <div class="product-media">
-              <div class="product-thumbnail object-cover"> 
-				  <a href="#">
-					  <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt=""> 
-				  </a> 
-				</div>
-              <div class="hoverable">
-                <ul>
-                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
-                </ul>
-              </div>
-              <div class="discount circle flexcenter"><span>32%</span></div>
-            </div>
-            <div class="product-content">
-              
-              <h3 class="main-links"><a href="#">Bloom</a></h3>
-				<div class="rating">
-                <div class="stars"> </div>
-                <span class="mini-text">(2,533)</span> </div>
-              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
-			<div class="mini-text">
-				<p>2975 Sold</p>
-				<p>Free Shipping</p>
-				</div>
-            </div>
-            </div>
-			  <div class="item">
-            <div class="product-media">
-              <div class="product-thumbnail object-cover"> 
-				  <a href="#">
-					  <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt=""> 
-				  </a> 
-				</div>
-              <div class="hoverable">
-                <ul>
-                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
-                </ul>
-              </div>
-              <div class="discount circle flexcenter"><span>32%</span></div>
-            </div>
-            <div class="product-content">
-              
-              <h3 class="main-links"><a href="#">Bloom</a></h3>
-				<div class="rating">
-                <div class="stars"> </div>
-                <span class="mini-text">(2,533)</span> </div>
-              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
-			<div class="mini-text">
-				<p>2975 Sold</p>
-				<p>Free Shipping</p>
-				</div>
-            </div>
-            </div>
-			</div>
-          <div class="row products mini">
-			<div class="item">
-            <div class="product-media">
-              <div class="product-thumbnail object-cover"> 
-				  <a href="#">
-					  <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt=""> 
-				  </a> 
-				</div>
-              <div class="hoverable">
-                <ul>
-                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
-                </ul>
-              </div>
-              <div class="discount circle flexcenter"><span>32%</span></div>
-            </div>
-            <div class="product-content">
-              
-              <h3 class="main-links"><a href="#">Reverie</a></h3>
-				<div class="rating">
-                <div class="stars"> </div>
-                <span class="mini-text">(2,533)</span> </div>
-              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
-			<div class="mini-text">
-				<p>2975 Sold</p>
-				<p>Free Shipping</p>
-				</div>
-            </div>
-            </div>
-			  <div class="item">
-            <div class="product-media">
-              <div class="product-thumbnail object-cover"> 
-				  <a href="#">
-					  <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt=""> 
-				  </a> 
-				</div>
-              <div class="hoverable">
-                <ul>
-                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
-                </ul>
-              </div>
-              <div class="discount circle flexcenter"><span>32%</span></div>
-            </div>
-            <div class="product-content">
-              
-              <h3 class="main-links"><a href="#">Reverie</a></h3>
-				<div class="rating">
-                <div class="stars"> </div>
-                <span class="mini-text">(2,533)</span> </div>
-              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
-			<div class="mini-text">
-				<p>2975 Sold</p>
-				<p>Free Shipping</p>
-				</div>
-            </div>
-            </div>
-			  <div class="item">
-            <div class="product-media">
-              <div class="product-thumbnail object-cover"> 
-				  <a href="#">
-					  <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt=""> 
-				  </a> 
-				</div>
-              <div class="hoverable">
-                <ul>
-                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
-                </ul>
-              </div>
-              <div class="discount circle flexcenter"><span>32%</span></div>
-            </div>
-            <div class="product-content">
-              
-              <h3 class="main-links"><a href="#">Reverie</a></h3>
-				<div class="rating">
-                <div class="stars"> </div>
-                <span class="mini-text">(2,533)</span> </div>
-              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
-			<div class="mini-text">
-				<p>2975 Sold</p>
-				<p>Free Shipping</p>
-				</div>
-            </div>
-            </div>
-			  <div class="item">
-            <div class="product-media">
-              <div class="product-thumbnail object-cover"> 
-				  <a href="#">
-					  <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt=""> 
-				  </a> 
-				</div>
-              <div class="hoverable">
-                <ul>
-                  <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                  <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
-                </ul>
-              </div>
-              <div class="discount circle flexcenter"><span>32%</span></div>
-            </div>
-            <div class="product-content">
-              
-              <h3 class="main-links"><a href="#">Reverie</a></h3>
-				<div class="rating">
-                <div class="stars"> </div>
-                <span class="mini-text">(2,533)</span> </div>
-              <div class="price"> <span class="product-current">$129.99</span> <span class="normal mini-text">$189.99</span> </div>
-			<div class="mini-text">
-				<p>2975 Sold</p>
-				<p>Free Shipping</p>
-				</div>
-            </div>
-            </div>
-			
-			</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-		</div>
 
-<!-- ========================== NEW FOOTER ========================== -->
-<footer>
-  <div class="footer-row">
-    <div class="footer-col"><img src="assets/media/TheTeaShop - alt logo.jpg" class="footer-logo">
-      <p>The Tea Shop is passionately dedicated to modernising tea appreciation and sharing our knowledge
-        about tea culture. We aim to share the health benefits of tea drinking with our customers and aspire
-        for our customers to appreciate our specially curated tea blends.</p>
+  <!-- ========================== NEW FOOTER ========================== -->
+  <footer>
+    <div class="footer-row">
+      <div class="footer-col"><img src="assets/media/TheTeaShop - alt logo.jpg" class="footer-logo">
+        <p>The Tea Shop is passionately dedicated to modernising tea appreciation and sharing our knowledge
+          about tea culture. We aim to share the health benefits of tea drinking with our customers and aspire
+          for our customers to appreciate our specially curated tea blends.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Store
+          <div class="underline"><span></span></div>
+        </h3>
+        <p>The Star Vista Atrium</p>
+        <p>Singapore</p>
+        <p>138620, #02-48</p>
+        <p class="footer-email-id">contactus@theteashop.com.sg</p>
+        <h4>+65 6694 3127</h4>
+      </div>
+      <div class="footer-col">
+        <h3>Links
+          <div class="underline"><span></span></div>
+        </h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter
+          <div class="underline"><span></span></div>
+        </h3>
+        <form>
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Enter Your Email" required>
+          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <div class="footer-social-icons"> <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i
+              class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i
+              class="fab fa-youtube"></i></a> </div>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>Store
-        <div class="underline"><span></span></div>
-      </h3>
-      <p>The Star Vista Atrium</p>
-      <p>Singapore</p>
-      <p>138620, #02-48</p>
-      <p class="footer-email-id">contactus@theteashop.com.sg</p>
-      <h4>+65 6694 3127</h4>
-    </div>
-    <div class="footer-col">
-      <h3>Links
-        <div class="underline"><span></span></div>
-      </h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Contacts</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h3>Newsletter
-        <div class="underline"><span></span></div>
-      </h3>
-      <form>
-        <i class="fa-regular fa-envelope"></i>
-        <input type="email" placeholder="Enter Your Email" required>
-        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-      </form>
-      <div class="footer-social-icons"> <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-youtube"></i></a> </div>
-    </div>
-  </div>
-  <hr>
-  <p class="footer-copyright">&copy; 2023 TheTeaShop | All Rights Reserved &#174;</p>
-</footer>
+    <hr>
+    <p class="footer-copyright">&copy; 2023 TheTeaShop | All Rights Reserved &#174;</p>
+  </footer>
 
-<!-- ========================== SCROLLUP ========================== --> 
-<a href="#top" class="scrollup" id="scroll-up"> <i class="uil uil-arrow-up scrollup__icon"></i> </a> 
+  <!-- ========================== SCROLLUP ========================== -->
+  <a href="#top" class="scrollup" id="scroll-up"> <i class="uil uil-arrow-up scrollup__icon"></i> </a>
 
-<!-- ========================== EXTERNAL FILES ========================== --> 
-<script src="assets\javascript\main.js"></script>
+  <!-- ========================== EXTERNAL FILES ========================== -->
+  <script src="assets\javascript\main.js"></script>
 </body>
+
 </html>

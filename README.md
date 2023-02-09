@@ -113,6 +113,21 @@ Our 2 product lines allow YOU to choose between a strong, aromatic kick or a del
     - Fixed the mobile view of the home page
     - Edited the footer contents __Jerel__
 
+7. 2/02/2023
+    - Added About Us Page __Jerel__
+
+8. 5/02/2023
+    - Added Contact Us Page
+    - Look for Mapbox API __Jerel__
+
+9. 7/02/2023
+    - Implemented MapBox API in Contact Us Page
+    - Fixed the display for the contact us page __Jerel__
+
+10. 9/02/2023
+    - Fix Reponsive for Contact Us Page
+    - Add Cart Feature 
+    - Implement JS for the cart feature (cart.js) __Jerel__
 
 ## Design ##
 ### Colour Scheme ###

@@ -67,29 +67,38 @@
           <form>
             <div class="input-wrap">
               <li class="user"><a href="#"><i class="fas fa-user"></i></a></li>
-              <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+              <li><a href="#"><i class="fas fa-cart-plus" id="cart-icon"></i></a></li>
             </div>
           </form>
         </div>
         <i class="fas fa-bars" id="menu-btn"></i>
       </div>
       <!--Cart-->
-      <div class="product-cart">
-        <div class="product-cart-title">Your Cart</div>
+      <div class="cart">
+        <div class="cart-title">Your Cart</div>
         <!--Content-->
-        <div class="product-cart-content">
-          <div class="product-cart-box">
-            <img src="assets/media/product-renders/FloralFantasy - bliss.jpg" alt="" class="product-cart-img">
-            <div class="product-detail-box">
+        <div class="cart-content">
+          <div class="cart-box">
+            <img src="assets/media/product-renders/FloralFantasy - bliss.jpg" alt="" class="cart-img">
+            <div class="detail-box">
               <div class="cart-product-title">Bliss</div>
-              <div class="cart-product-price">$30</div>
+              <div class="cart-price">$30.69</div>
               <input type="number" value="1" class="cart-quantity">
             </div>
             <!--Remove Cart-->
             <i class="fa-solid fa-trash cart-remove"></i>
           </div>
         </div>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!--Buy Button-->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!--Cart Close-->
+        <i class="fa-solid fa-xmark" id="close-cart"></i>
       </div>
+
     </nav>
   </header>
   <!-- ========================== PAGE: PRODUCTS ========================== -->
@@ -107,7 +116,7 @@
                   <div class="offer">
                     <p>Offer Ends At</p>
                     <ul class="product-flexcenter">
-                      <li>1</li>
+                      <li>12</li>
                       <li>5</li>
                       <li>27</li>
                       <li>60</li>
@@ -115,7 +124,7 @@
                   </div>
                   <div class="product-media">
                     <div class="product-image">
-                      <a href="#"><img src="assets/media/product-renders/FloralFantasy - bliss.jpg" alt="">
+                      <a href="#"><img src="assets/media/product-renders/TheHouseSpecials - TheClassic - FrontView.jpg" alt="">
                       </a>
                     </div>
                     <div class="hoverable">
@@ -125,20 +134,20 @@
                         <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
                       </ul>
                     </div>
-                    <div class="discount circle flexcenter"><span>31%</span></div>
+              
                   </div>
                   <div class="product-content">
                     <div class="rating">
                       <div class="stars"><i class="ri-star-fill"></i> </div>
                       <span class="mini-text">(2,533)</span>
                     </div>
-                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                    <h3 class="main-links"><a href="#">The Classic (Tea Gift Pack)</a></h3>
                     <div class="price"> <span class="product-current">$129.99</span>
                       <span class="normal mini-text">$189.99</span>
                     </div>
                     <div class="stock mini-text">
                       <div class="qty"> <span>Stock: <strong class="qty-available">107</strong></span>
-                        <span>Sold: <strong class="qty-sold">23</strong></span>
+                        <span>Sold: <strong class="qty-sold">43</strong></span>
                       </div>
 
                       <div class="bar">
@@ -153,7 +162,7 @@
                   <div class="product-media">
                     <div class="product-thumbnail object-cover">
                       <a href="#">
-                        <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt="">
+                        <img src="assets/media/product-renders/FloralFantasy - bliss.jpg" alt="">
                       </a>
                     </div>
                     <div class="hoverable">
@@ -163,11 +172,42 @@
                         <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
                       </ul>
                     </div>
-                    <div class="discount circle flexcenter"><span>32%</span></div>
+              
                   </div>
                   <div class="product-content">
 
-                    <h3 class="main-links"><a href="#">Bloom</a></h3>
+                    <h3 class="main-links"><a href="#">Bliss</a></h3>
+                    <div class="rating">
+                      <div class="stars"> </div>
+                      <span class="mini-text">(1,333)</span>
+                    </div>
+                    <div class="price"> <span class="product-current">$129.99</span> <span
+                        class="normal mini-text">$189.99</span> </div>
+                    <div class="mini-text">
+                      <p>2975 Sold</p>
+                      <p>Free Shipping</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product-media">
+                    <div class="product-thumbnail object-cover">
+                      <a href="#">
+                        <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                  <div class="product-content">
+
+                    <h3 class="main-links"><a href="#">Reverie</a></h3>
                     <div class="rating">
                       <div class="stars"> </div>
                       <span class="mini-text">(2,533)</span>
@@ -184,7 +224,7 @@
                   <div class="product-media">
                     <div class="product-thumbnail object-cover">
                       <a href="#">
-                        <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt="">
+                        <img src="assets/media/product-renders/TheHouseSpecials - EarlGrey.jpg" alt="">
                       </a>
                     </div>
                     <div class="hoverable">
@@ -194,11 +234,11 @@
                         <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
                       </ul>
                     </div>
-                    <div class="discount circle flexcenter"><span>32%</span></div>
+                  
                   </div>
                   <div class="product-content">
 
-                    <h3 class="main-links"><a href="#">Bloom</a></h3>
+                    <h3 class="main-links"><a href="#">EarlGrey</a></h3>
                     <div class="rating">
                       <div class="stars"> </div>
                       <span class="mini-text">(2,533)</span>
@@ -215,7 +255,7 @@
                   <div class="product-media">
                     <div class="product-thumbnail object-cover">
                       <a href="#">
-                        <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt="">
+                        <img src="assets/media/product-renders/FloralFantasy - BouquetOfDreams.png" alt="">
                       </a>
                     </div>
                     <div class="hoverable">
@@ -225,42 +265,11 @@
                         <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
                       </ul>
                     </div>
-                    <div class="discount circle flexcenter"><span>32%</span></div>
+                    
                   </div>
                   <div class="product-content">
 
-                    <h3 class="main-links"><a href="#">Bloom</a></h3>
-                    <div class="rating">
-                      <div class="stars"> </div>
-                      <span class="mini-text">(2,533)</span>
-                    </div>
-                    <div class="price"> <span class="product-current">$129.99</span> <span
-                        class="normal mini-text">$189.99</span> </div>
-                    <div class="mini-text">
-                      <p>2975 Sold</p>
-                      <p>Free Shipping</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="product-media">
-                    <div class="product-thumbnail object-cover">
-                      <a href="#">
-                        <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="hoverable">
-                      <ul>
-                        <li class="product-active"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
-                      </ul>
-                    </div>
-                    <div class="discount circle flexcenter"><span>32%</span></div>
-                  </div>
-                  <div class="product-content">
-
-                    <h3 class="main-links"><a href="#">Bloom</a></h3>
+                    <h3 class="main-links"><a href="#">BouquetOfDreams</a></h3>
                     <div class="rating">
                       <div class="stars"> </div>
                       <span class="mini-text">(2,533)</span>
@@ -279,7 +288,7 @@
                   <div class="product-media">
                     <div class="product-thumbnail object-cover">
                       <a href="#">
-                        <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt="">
+                        <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" alt="">
                       </a>
                     </div>
                     <div class="hoverable">
@@ -289,11 +298,11 @@
                         <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
                       </ul>
                     </div>
-                    <div class="discount circle flexcenter"><span>32%</span></div>
+                  
                   </div>
                   <div class="product-content">
 
-                    <h3 class="main-links"><a href="#">Reverie</a></h3>
+                    <h3 class="main-links"><a href="#">Bloom</a></h3>
                     <div class="rating">
                       <div class="stars"> </div>
                       <span class="mini-text">(2,533)</span>
@@ -310,7 +319,7 @@
                   <div class="product-media">
                     <div class="product-thumbnail object-cover">
                       <a href="#">
-                        <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt="">
+                        <img src="assets/media/product-renders/TheHouseSpecials - EnglishBreakfastTea.jpg" alt="">
                       </a>
                     </div>
                     <div class="hoverable">
@@ -320,11 +329,11 @@
                         <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
                       </ul>
                     </div>
-                    <div class="discount circle flexcenter"><span>32%</span></div>
+                  
                   </div>
                   <div class="product-content">
 
-                    <h3 class="main-links"><a href="#">Reverie</a></h3>
+                    <h3 class="main-links"><a href="#">EnglishBreakfastTea</a></h3>
                     <div class="rating">
                       <div class="stars"> </div>
                       <span class="mini-text">(2,533)</span>
@@ -341,7 +350,7 @@
                   <div class="product-media">
                     <div class="product-thumbnail object-cover">
                       <a href="#">
-                        <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt="">
+                        <img src="assets/media/product-renders/TheHouseSpecials - Matcha.jpg" alt="">
                       </a>
                     </div>
                     <div class="hoverable">
@@ -351,11 +360,11 @@
                         <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
                       </ul>
                     </div>
-                    <div class="discount circle flexcenter"><span>32%</span></div>
+              
                   </div>
                   <div class="product-content">
 
-                    <h3 class="main-links"><a href="#">Reverie</a></h3>
+                    <h3 class="main-links"><a href="#">Matcha</a></h3>
                     <div class="rating">
                       <div class="stars"> </div>
                       <span class="mini-text">(2,533)</span>
@@ -372,7 +381,7 @@
                   <div class="product-media">
                     <div class="product-thumbnail object-cover">
                       <a href="#">
-                        <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" alt="">
+                        <img src="assets/media/product-renders/TheHouseSpecials - TeaGiftPack.jpg" alt="">
                       </a>
                     </div>
                     <div class="hoverable">
@@ -382,12 +391,10 @@
                         <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
                       </ul>
                     </div>
-
-                    <div class="discount circle flexcenter"><span>32%</span></div>
                   </div>
                   <div class="product-content">
 
-                    <h3 class="main-links"><a href="#">Reverie</a></h3>
+                    <h3 class="main-links"><a href="#">TeaGiftPack</a></h3>
                     <div class="rating">
                       <div class="stars"> </div>
                       <span class="mini-text">(2,533)</span>
@@ -461,7 +468,9 @@
   <a href="#top" class="scrollup" id="scroll-up"> <i class="uil uil-arrow-up scrollup__icon"></i> </a>
 
   <!-- ========================== EXTERNAL FILES ========================== -->
-  <script src="assets\javascript\main.js"></script>
+  <script src="Javascript/cart.js"></script>
+  <script src="Javascript/navbar.js"></script>
+
 </body>
 
 </html>

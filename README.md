@@ -24,26 +24,21 @@ Our 2 product lines allow YOU to choose between a strong, aromatic kick or a del
     - Corporate Responsibility
     - Our Team
 - Products Catalogue
-    - The House Specials: Earl Grey (SGD $19.90)
-    - The House Specials: English Breakfast Tea (SGD $19.90)
-    - The House Specials: Matcha Tea (SGD $19.90)
-    - Floral Fantasy: Bloom (SGD $24.90)
-    - Floral Fantasy: Reverie (SGD $24.90)
-    - Floral Fantasy: Bliss (SGD $24.90)
-    - The Tea Gift Pack: 4 packets of 3 teas (SGD $189.90)
-    - The Classic: 2 packs of 3 teas (SGD $99.90)
-    - Bouquet of Dreams: 1 pack of 3 teas (SGD $69.90)
-- Individual Product Pages
-- Shopping Cart Page
-- Checkout Page
+    - The House Specials: Earl Grey
+    - The House Specials: English Breakfast Tea
+    - The House Specials: Matcha Tea
+    - Floral Fantasy: Bloom
+    - Floral Fantasy: Reverie
+    - Floral Fantasy: Bliss
+    - The Tea Gift Pack: 4 packets of 3 teas
+    - The Classic: 2 packs of 3 teas
+    - Bouquet of Dreams: 1 pack of 3 teas
 - Contact Us Page
-- FAQ Page
 
 ### Features & Functions ###
 - Reactive & Website Interactiveness throughout the website
 - Reactive social media icons
-- Pop-up Scroll-Up button after scrolling for 280px
-- Google Maps iframe
+- Mapbox iFrame
 - Responsiveness for the following:
     1. Large Screens: 2560px
     2. Desktops: 1440px
@@ -52,9 +47,13 @@ Our 2 product lines allow YOU to choose between a strong, aromatic kick or a del
     5. Mobile Screens: 480px
 
 ### APIs Implemented ###
-- Google Maps API
+- Mapbox API (Jerel)
     - We used the Google Maps API to import an iFrame into the website to show the location of our physical store
     - This API also allows the user to obtain directions by clicking the button in the top-left hand corner
+- [Swiper API](https://swiperjs.com/swiper-api) (Reginald)
+    - Swiper is a JavaScript library that creates modern touch sliders with hardware-accelerated transitions by offloading graphic-intensive transitions to create smoother visuals. 
+    - This API was used to display all of our products in a consolidated manner on our home page
+    - It was implemented by creating a new file __swiper.js__ and initialising swiper with key-value-pairs for the animation data
 
 ## Technologies Used ##
 1. HTML, CSS
@@ -73,17 +72,6 @@ Our 2 product lines allow YOU to choose between a strong, aromatic kick or a del
 7. Notion
     - We utilised Notion as a project management tool, making use of their Kanban board and Timeline visuals to track our progress and keep each other updated on individual task progress
     - Notion was also used for our lecturer to check-in on our progress from Day 1 and ensure constant and consistent progress
-
-## Team Contributions ##
-### Jerel ###
-- Focused mainly on the front-end aspect of the website
-- Tested and worked on responsiveness of TTS v2
-
-### Reginald ###
-- Focused mainly on the back-end aspect of the website
-- Implemented and tested APIs
-- Wrote README.md and relevant descriptions
-- Wrote the write-ups necessary for the website content (e.g. product descriptions, about us, environmental resposibility, etc)
 
 ## Design ##
 ### Colour Scheme ###

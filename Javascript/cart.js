@@ -49,7 +49,17 @@ function ready() {
 
 }
 
-// Reomve Items From Cart
+function buyButtonClicked() {
+    //alert("Your Order is placed");
+    location.href = "checkout.html"
+    var cartContent = document.getElementsByClassName("cart-content")[0];
+    while (cartContent.hasChildNodes()) {
+      cartContent.removeChild(cartContent.firstChild);
+    }
+    updatetotal();
+  }
+
+// Remove Items From Cart
 function removeCartItem(event) {
     var buttonClicked = event.target;
     buttonClicked.parentElement.remove();

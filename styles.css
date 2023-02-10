@@ -737,8 +737,10 @@ ul {
 
 .inputBox input {
     padding: 10px;
-    font-size: 0.6em;
+    font-size: 1.0rem;
     outline: none;
+   
+    font-family: 'avenir_next_lt_proregular';
 }
 
 .inputBox textarea {
@@ -748,16 +750,18 @@ ul {
     resize: none;
     min-height: 200px;
     margin-bottom: 10px;
+    font-family: 'avenir_next_lt_proregular';
 }
 
 .inputBox input[type="Submit"] {
-    background: #FBB03C;
+    background:var(--special-orange-light);
     border: none;
     font-size: 1.0rem;
     max-width: 120px;
     font-weight: 500;
     cursor: pointer;
     padding: 14px 15px;
+    color: var(--special-white);
 }
 
 .inputBox ::placeholder {
@@ -782,7 +786,7 @@ ul {
 
 .info .infoBox div p {
     color: var(--special-white);
-    font-size: 1.0rem;
+    font-size: 2.0rem;
     margin-top: 15px;
 }
 
@@ -1114,7 +1118,7 @@ ul {
     height: 16px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z' fill='rgba(241,196,14,1)'/%3E%3C/svg%3E");
     background-position-y: top;
-    background-repeat-y: no-repeat();
+    background-repeat: no-repeat();
 
 }
 

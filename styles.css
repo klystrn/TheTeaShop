@@ -131,6 +131,11 @@ ul {
     font-size: 1.6em;
 }
 
+.navbar_logo{
+    height: 70px;
+    width: relative;
+}
+
 #navbar .container-inner {
     display: flex;
     justify-content: space-between;
@@ -328,6 +333,7 @@ ul {
 .img-wrapper {
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .img-wrapper>img {
@@ -345,7 +351,10 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.triple-introduction-boxes{
+    grid-template-rows: 1fr 1fr;
 }
 
 .content.fade {
@@ -355,6 +364,7 @@ ul {
 
 .img-wrapper>img {
     transition: 200ms ease-in-out;
+    border-radius: 10px;
 }
 
 .img-wrapper>.content {
@@ -474,6 +484,10 @@ ul {
     height: 100%;
 }
 
+.swiper-pagination-bullet-active{
+    background-color: var(--special-orange-strong);
+}
+
 /* ================ About Us ================ */
 .home_aboutus {
     background-color: #FFFFFF;
@@ -518,8 +532,8 @@ ul {
 
 .home_altlogo {
     margin-top: -7.5rem;
-    width: 430px;
-    height: auto;
+    height: 100px;
+    width: auto;
 }
 
 .home_aboutus_grid_mobile {
@@ -553,12 +567,12 @@ ul {
 
 .about-inner-container h1 {
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 900;
 }
 
 .about-text {
-    font-size: 13px;
+    font-size: 18px;
     color: black;
     line-height: 30px;
     text-align: justify;
@@ -576,6 +590,22 @@ ul {
 .skills span:nth-child(2),
 .skills span:nth-child(3) {
     cursor: pointer;
+}
+
+.aboutus_links{
+    font-size: 1.25rem;
+    color: var(--special-orange-strong);
+    text-decoration: none;
+}
+
+.aboutus_links:hover{
+    color: var(--special-orange-light);
+    transform: translateX(-0.5rem);
+    transition: 0.3s;
+}
+
+.aboutus_links:not(:hover){
+    transition: 0.3s;
 }
 
 .about-wrapper-body,
@@ -614,11 +644,20 @@ ul {
     font-size: 16px;
 }
 
-.about-img {
+.about-img, .about-img-jerel, .about-img-reginald {
     max-width: 520px;
     border: 3px solid var(--special-orange-strong);
     border-radius: 10px;
     margin-right: 15px;
+}
+
+.about-img-jerel{
+    max-height: 450px;
+    width: auto;
+}
+
+.about-img-reginald{
+    margin-top: 6rem;
 }
 
 /* ====================== PAGE: Contact Us ====================== */
@@ -824,7 +863,9 @@ ul {
 }
 
 
+/* ====================== PAGE: FAQs ====================== */
 
+/* ================ Welcome ================ */
 
 /* ====================== PAGE: PRODUCT ====================== */
 
@@ -1320,7 +1361,7 @@ ul {
 
 /* ====================== CheckOut ====================== */
 
-/* ====================== NEW FOOTER ====================== */
+/* ====================== FOOTER ====================== */
 
 footer {
     width: 100%;
@@ -1472,29 +1513,97 @@ hr {
     }
 }
 
+/* ---------------- Social Media Icons ---------------- */
+.footer_button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #FFFFFF;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+  
+.footer_iconlink{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    color: #000000;
+    transition: all 0.3s ease-out;
+}
+
+.footer_iconlink i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.footer_button button{
+    font-family: var(--body-font);
+    font-size: 1.15rem;
+    font-weight: bolder;
+    line-height: 60px;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+  
+.footer_button:nth-child(1) button{
+    color: #4267B2;
+    border: none;
+    background: none;
+}
+.footer_button:nth-child(2) button{
+    color: #1DA1F2;
+    border: none;
+    background: none;
+}
+.footer_button:nth-child(3) button{
+    color: #E1306C;
+    border: none;
+    background: none;
+}
+
+.altfooter_parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.altfooter_icons{
+    display: none;
+    padding-top: 1.5rem;
+}
+
 /* ====================== SCROLL UP ====================== */
-.scrollup {
+.scrollup{
     position: fixed;
     right: 1rem;
     bottom: -20%;
     background-color: var(--special-orange-strong);
     padding: 0 .3rem;
     border-radius: 5px;
-    z-index: 1000;
+    z-index: var(--z-tooltip);
     transition: .4s;
 }
-
-.scrollup:hover {
+.scrollup:hover{
     background-color: var(--special-orange-light);
     transform: scale(1.125);
 }
 
-.scrollup__icon {
+.scrollup__icon{
     font-size: 1.5rem;
     color: #FFF;
 }
 
-.show-scroll {
+.show-scroll{
     bottom: 5rem;
 }
 
@@ -1578,6 +1687,22 @@ hr {
         object-position: 50% 40%;
     }
 
+    /* ================ FOOTER ================ */
+    .footer_button:hover{
+        width: 175px;
+    }
+    .footer_icons .footer_button:hover .footer_iconlink i{
+        color: #fff;
+    }
+    .footer_icons .footer_button:nth-child(1):hover .footer_iconlink{
+        background: #4267B2;
+    }
+    .footer_icons .footer_button:nth-child(2):hover .footer_iconlink{
+        background: #1DA1F2;
+    }
+    .footer_icons .footer_button:nth-child(3):hover .footer_iconlink{
+        background: linear-gradient(-135deg, #833AB4, #FCAF45);
+    }
 
 }
 
@@ -1788,6 +1913,26 @@ hr {
 
     .contactus_subtitle {
         text-align: center;
+    }
+
+    /* ================ FOOTER ================ */
+    .footer_icons{
+        display: none;
+    }
+    .altfooter_icons{
+        display: inline-block;
+    }
+    .altfooter_icons .footer_button:hover .footer_iconlink i{
+        color: #fff;
+    }
+    .altfooter_icons .footer_button:nth-child(1):hover .footer_iconlink{
+        background: #4267B2;
+    }
+    .altfooter_icons .footer_button:nth-child(2):hover .footer_iconlink{
+        background: #1DA1F2;
+    }
+    .altfooter_icons .footer_button:nth-child(3):hover .footer_iconlink{
+        background: linear-gradient(-135deg, #833AB4, #FCAF45);
     }
 }
 

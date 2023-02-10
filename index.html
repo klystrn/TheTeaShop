@@ -1,264 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <title>TheTeaShop - Home</title>
+        <link rel="icon" href="assets\media\TheTeaShop - logo.jpg">
+    
+        <!-- ========================== STYLES ========================== -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="assets\fonts\Avenir Next\avenir-next.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>TheTeaShop - Home</title>
-    <link rel="icon" href="assets\media\TheTeaShop - logo.jpg">
-
-    <!-- ========================== STYLES ========================== -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="assets\fonts\Avenir Next\avenir-next.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymouse"></script>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
-</head>
-
-<body>
-    <!-- ========================== NEW NAVIGATION BAR ========================== -->
-    <header class="navbar-header">
-        <nav id="navbar">
-            <div class="menu">
-                <div><img src="assets/media/TheTeaShop - logo.jpg" class="logo">
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymouse"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    </head>
+    
+    <body>
+        <!-- ========================== NAVIGATION BAR ========================== -->
+        <header class="navbar-header">
+            <nav id="navbar">
+                <div class="menu">
+                    <div><img src="assets/media/TheTeaShop - logo.jpg" class="logo">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="ProductCatalogue.html">Product</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Cart</a></li>
+                        </ul>
+                        <ul class="social-media">
+                            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                        <form>
+                            <div class="input-wrap">
+                                <input type="search" placeholder="Search.." class="input-search">
+                                <button type="submit" class="nav-btn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="nav-container"> 
+                    <a href="index.html" class="brand">
+                        <img class="navbar_logo" src="assets\media\TheTeaShop - alt logo.png" alt="TTS Logo">
+                    </a>
+                    <div class="container-inner">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="ProductCatalogue.html">Product</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                        </ul>
+                        <form>
+                            <div class="input-wrap">
+                                <li class="user"><a href="#"><i class="fas fa-user"></i></a></li>
+                                <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+                            </div>
+                        </form>
+                    </div>
+                    <i class="fas fa-bars" id="menu-btn"></i>
+                </div>
+            </nav>
+        </header>
+    
+        <!-- ========================== PAGE: HOME ========================== -->
+    
+        <!-- ================= Welcome ================= -->
+        <section class="home_welcome" id="welcome">
+            <div class="home_image_grid_poster">
+                <div class="home_image_postercontainer">
+                    <img class="home_news_poster" src="assets\media\TheTeaShop - poster 1.png" alt="TheTeaShop Logo">
+                </div>
+                <div class="home_image_postertext">
+                    <h1>20% Off Your <br> First Purchase</h1>
+                    <p class="text">
+    
+                        Use discount code <strong>FIRST20</strong> for 20% off first purchase.
+                    </p>
+                    <a class="home_image_poster_shopnow" href="ProductCatalogue.html">
+                        <i class="uil uil-shopping-bag"></i>
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+    
+            <div class="home_image_grid">
+                <div class="img-wrapper"> <img class="zoom blur"
+                        src="assets\media\product-renders\TheHouseSpecials - EarlGrey.jpg" alt="">
+                    <div class="content fade">
+                        <div class="triple-introduction-boxes">
+                            <h3>Earl Grey</h3>
+                            <br>
+                            <p>
+                                Known to improve digestion, Earl Grey is a classic tea blend which has been 
+                                flavoured with the addition of oil of bergamot. The rind's fragrant oil is 
+                                added to black tea to give Earl Grey its unique taste.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrapper"> <img class="zoom blur"
+                        src="assets\media\product-renders\TheHouseSpecials - EnglishBreakfastTea.jpg" alt="">
+                    <div class="content fade">
+                        <div class="triple-introduction-boxes">
+                            <h3>English Breakfast</h3>
+                            <br>
+                            <p>
+                                The full-bodied, robust, rich and blended flavour pairs well with milk and sugar 
+                                in a style traditionally associated with a hearty English Breakfast.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrapper"> <img class="zoom blur"
+                        src="assets\media\product-renders\TheHouseSpecials - Matcha.jpg" alt="">
+                    <div class="content fade">
+                        <div class="triple-introduction-boxes">
+                            <h3>Matcha</h3>
+                            <br>
+                            <p>
+                                Matcha is a powdered green tea produced from the ground, dried green tea leaves, 
+                                making it rich in antioxidants. Our matcha tea has a unique, non-bitter taste that 
+                                combines with our pure vanilla bean extract to produce a milky, nutty taste.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <!-- ================= Discover ================= -->
+        <section class="home_discover">
+            <h2 class="home_discover_header">Discover</h2>
+            <!-- Swiper -->
+            <div class="swiper-body">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/media/product-renders/FloralFantasy - bliss.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/media/product-renders/FloralFantasy - BouquetOfDreams.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/media/product-renders/TheHouseSpecials - EarlGrey.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/media/product-renders/TheHouseSpecials - EnglishBreakfastTea.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/media/product-renders/TheHouseSpecials - Matcha.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- ================= About Us ================= -->
+        <section class="home_aboutus">
+            <h2 class="home_aboutus_header">About Us</h2>
+            <div class="home_aboutus_grid_columns">
+                <div class="home_aboutus_grid_mobile">
+                    <img class="home_altlogo" src="assets\media\TheTeaShop - alt logo.png" alt="TheTeaShop Logo">
+                </div>
+                <div class="home_aboutus_mobiletext">
+                    <p class="home_aboutus_text">
+                        Founded by Reginald Tan in 2021, The Tea Shop is passionately dedicated to tea appreciation and
+                        sharing our knowledge about tea culture.
+                        <br><br>
+                        We aim to share the health benefits of tea drinking withour customers and aspire for our
+                        customers to appreciate our specially curated tea blends.
+                        <br><br>
+                        Our 2 product lines allow YOU to choose between a strong, aromatic kick or
+                        a delightful, blossoming infusion.
+                    </p>
+                </div>
+                <div class="home_aboutus_grid_column1">
+                    <p class="home_aboutus_text">
+                        The Tea Shop is passionately dedicated to modernising tea appreciation and sharing our knowledge
+                        about tea culture. We aim to share the health benefits of tea drinking with our customers and aspire
+                        for our customers to appreciate our specially curated tea blends.</p>
+                </div>
+                <div class="home_aboutus_grid_column2">
+                    <img class="home_altlogo" src="assets/media/TheTeaShop - logo.jpg" alt="TheTeaShop Logo">
+                </div>
+            </div>
+    
+            </div>
+        </section>
+    
+        <!-- ========================== FOOTER ========================== -->
+        <footer>
+            <div class="footer-row">
+                <div class="footer-col"><img src="assets/media/TheTeaShop - alt logo.jpg" class="footer-logo">
+                    <p>The Tea Shop is passionately dedicated to modernising tea appreciation and sharing our knowledge
+                        about tea culture. We aim to share the health benefits of tea drinking with our customers and aspire
+                        for our customers to appreciate our specially curated tea blends.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Store <div class="underline"><span></span></div>
+                    </h3>
+                    <p>The Star Vista Atrium</p>
+                    <p>Singapore</p>
+                    <p>138620, #02-48</p>
+                    <p class="footer-email-id">contactus@theteashop.com.sg</p>
+                    <h4>+65 6694 3127</h4>
+                </div>
+                <div class="footer-col">
+                    <h3>Links<div class="underline"><span></span></div>
+                    </h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="ProductCatalogue.html">Product</a></li>
                         <li><a href="ContactUs.html">Contact Us</a></li>
-                        <li><a href="#">FAQ</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Cart</a></li>
-                    </ul>
-                    <ul class="social-media">
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>
+                        Newsletter
+                        <div class="underline"><span></span></div>
+                    </h3>
+
                     <form>
-                        <div class="input-wrap">
-                            <input type="search" placeholder="Search.." class="input-search">
-                            <button type="submit" class="nav-btn"><i class="fas fa-search"></i></button>
-                        </div>
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
                     </form>
-                </div>
-            </div>
-            <div class="nav-container"> <a href="index.html" class="brand">TheTeaShop</a>
-                <div class="container-inner">
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="ProductCatalogue.html">Product</a></li>
-                        <li><a href="ContactUs.html">Contact Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                    <form>
-                        <div class="input-wrap">
-                            <li class="user"><a href="#"><i class="fas fa-user"></i></a></li>
-                            <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+
+                    <div class="footer_icons">
+                        <div class="footer_button">
+                            <a class="footer_iconlink" href="https://www.facebook.com/">
+                                <i class="uil uil-facebook-f"></i>
+                            </a>
+                            <button class="footer_button_facebook">
+                                Facebook
+                            </button>
                         </div>
-                    </form>
-                </div>
-                <i class="fas fa-bars" id="menu-btn"></i>
-            </div>
-        </nav>
-    </header>
+               
+                        <div class="footer_button">
+                            <a class="footer_iconlink" href="https://www.twitter.com/">
+                                <i class="uil uil-twitter-alt"></i>
+                            </a>
+                            <button class="footer_button_twitter">
+                                Twitter
+                            </button>
+                        </div>
+               
+                        <div class="footer_button">
+                            <a class="footer_iconlink" href="https://www.instagram.com/">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                            <button class="footer_button_instagram">
+                                Instagram
+                            </button>
+                        </div>
+                     </div>
 
-    <!-- ========================== PAGE: HOME ========================== -->
-
-    <!-- ================= Welcome ================= -->
-    <section class="home_welcome" id="welcome">
-        <div class="home_image_grid_poster">
-            <div class="home_image_postercontainer">
-                <img class="home_news_poster" src="assets\media\TheTeaShop - poster 1.png" alt="TheTeaShop Logo">
-            </div>
-            <div class="home_image_postertext">
-                <h1>20% Off Your <br> First Purchase</h1>
-                <p class="text">
-
-                    Use discount code <strong>FIRST20</strong> for 20% off first purchase.
-                </p>
-                <a class="home_image_poster_shopnow" href="ProductCatalogue.html">
-                    <i class="uil uil-shopping-bag"></i>
-                    Shop Now
-                </a>
-            </div>
-        </div>
-
-        <div class="home_image_grid">
-            <div class="img-wrapper"> <img class="zoom blur"
-                    src="assets\media\product-renders\TheHouseSpecials - EarlGrey.jpg" alt="">
-                <div class="content fade"> Earl Grey </div>
-            </div>
-            <div class="img-wrapper"> <img class="zoom blur"
-                    src="assets\media\product-renders\TheHouseSpecials - EnglishBreakfastTea.jpg" alt="">
-                <div class="content fade"> English Breakfast </div>
-            </div>
-            <div class="img-wrapper"> <img class="zoom blur"
-                    src="assets\media\product-renders\TheHouseSpecials - Matcha.jpg" alt="">
-                <div class="content fade"> Matcha </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ================= Discover ================= -->
-    <section class="home_discover">
-        <h2 class="home_discover_header">Discover</h2>
-        <div class="home_discover_images">
-            <div class="home_discover_grid">
-                <div class="home_discover_grid_hs">
-                    <a href="ProductCatalogue.html">
-                        <img class="hs_image" src="assets\media\product-renders\FloralFantasy - reverie.jpg"
-                            alt="The House Specials Image">
-                    </a>
-                </div>
-                <div class="home_discover_grid_ff">
-                    <a href="ProductCatalogue.html">
-                        <img class="ff_image" src="assets\media\product-renders\FloralFantasy - BouquetOfDreams.png"
-                            alt="The House Specials Image">
-                    </a>
-                </div>
-                <div class="home_discover_grid_gp">
-                    <a href="ProductCatalogue.html">
-                        <img class="gp_image" src="assets\media\product-renders\TheHouseSpecials - TeaGiftPack.jpg"
-                            alt="The House Specials Image">
-                    </a>
+                     <div class="altfooter_parent">
+                        <div class="altfooter_icons">
+                            <div class="footer_button">
+                                <a class="footer_iconlink" href="https://www.facebook.com/">
+                                    <i class="uil uil-facebook-f"></i>
+                                </a>
+                                <button class="footer_button_facebook">
+                                    Facebook
+                                </button>
+                            </div>
+                   
+                            <div class="footer_button">
+                                <a class="footer_iconlink" href="https://www.twitter.com/">
+                                    <i class="uil uil-twitter-alt"></i>
+                                </a>
+                                <button class="footer_button_twitter">
+                                    Twitter
+                                </button>
+                            </div>
+                   
+                            <div class="footer_button">
+                                <a class="footer_iconlink" href="https://www.instagram.com/">
+                                    <i class="uil uil-instagram"></i>
+                                </a>
+                                <button class="footer_button_instagram">
+                                    Instagram
+                                </button>
+                            </div>
+                         </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Swiper -->
-    <div class="swiper-body">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="assets/media/product-renders/FloralFantasy - bliss.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/media/product-renders/FloralFantasy - bloom.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/media/product-renders/FloralFantasy - reverie.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/media/product-renders/FloralFantasy - BouquetOfDreams.png" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/media/product-renders/TheHouseSpecials - EarlGrey.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/media/product-renders/TheHouseSpecials - EnglishBreakfastTea.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/media/product-renders/TheHouseSpecials - Matcha.jpg" />
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
+            <hr>
+            <p class="footer-copyright">&copy; 2023 TheTeaShop | All Rights Reserved &#174;</p>
+        </footer>
 
-    <!-- ================= About Us ================= -->
-    <section class="home_aboutus">
-        <h2 class="home_aboutus_header">About Us</h2>
-        <div class="home_aboutus_grid_columns">
-            <div class="home_aboutus_grid_mobile">
-                <img class="home_altlogo" src="assets\media\TheTeaShop - alt logo.png" alt="TheTeaShop Logo">
-            </div>
-            <div class="home_aboutus_mobiletext">
-                <p class="home_aboutus_text">
-                    Founded by Reginald Tan in 2021, The Tea Shop is passionately dedicated to tea appreciation and
-                    sharing our knowledge about tea culture.
-                    <br><br>
-                    We aim to share the health benefits of tea drinking withour customers and aspire for our
-                    customers to appreciate our specially curated tea blends.
-                    <br><br>
-                    Our 2 product lines allow YOU to choose between a strong, aromatic kick or
-                    a delightful, blossoming infusion.
-                </p>
-            </div>
-            <div class="home_aboutus_grid_column1">
-                <p class="home_aboutus_text">
-                    The Tea Shop is passionately dedicated to modernising tea appreciation and sharing our knowledge
-                    about tea culture. We aim to share the health benefits of tea drinking with our customers and aspire
-                    for our customers to appreciate our specially curated tea blends.</p>
-            </div>
-            <div class="home_aboutus_grid_column2">
-                <img class="home_altlogo" src="assets/media/TheTeaShop - logo.jpg" alt="TheTeaShop Logo">
-            </div>
-        </div>
-
-        </div>
-    </section>
-
-    <!-- ========================== NEW FOOTER ========================== -->
-    <footer>
-        <div class="footer-row">
-            <div class="footer-col"><img src="assets/media/TheTeaShop - alt logo.jpg" class="footer-logo">
-                <p>The Tea Shop is passionately dedicated to modernising tea appreciation and sharing our knowledge
-                    about tea culture. We aim to share the health benefits of tea drinking with our customers and aspire
-                    for our customers to appreciate our specially curated tea blends.</p>
-            </div>
-            <div class="footer-col">
-                <h3>Store <div class="underline"><span></span></div>
-                </h3>
-                <p>The Star Vista Atrium</p>
-                <p>Singapore</p>
-                <p>138620, #02-48</p>
-                <p class="footer-email-id">contactus@theteashop.com.sg</p>
-                <h4>+65 6694 3127</h4>
-            </div>
-            <div class="footer-col">
-                <h3>Links<div class="underline"><span></span></div>
-                </h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Newsletter<div class="underline"><span></span></div>
-                </h3>
-                <form>
-                    <i class="fa-regular fa-envelope"></i>
-                    <input type="email" placeholder="Enter Your Email" required>
-                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-                </form>
-                <div class="footer-social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <p class="footer-copyright">&copy; 2023 TheTeaShop | All Rights Reserved &#174;</p>
-    </footer>
-    <!-- ========================== SCROLLUP ========================== -->
-    <a href="#welcome" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
-
-    <!-- ========================== EXTERNAL FILES ========================== -->
-    <script src="Javascript/navbar.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="Javascript/swiper.js"></script>
-
-
-</body>
-
+        <!-- ========================== SCROLLUP ========================== -->
+        <a href="#welcome" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+    
+        <!-- ========================== EXTERNAL FILES ========================== -->
+        <script src="Javascript/navbar.js"></script>
+        
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="Javascript/swiper.js"></script>
+    
+    
+    </body>
 </html>

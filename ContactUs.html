@@ -1,197 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>TheTeaShop - Contact Us</title>
-<link rel="icon" href="assets\media\TheTeaShop - logo.jpg">
-
-<!-- ========================== STYLES ========================== -->
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="assets\fonts\Avenir Next\avenir-next.css">
-<!-- FONT AWESOME -->
-  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymouse"></script>
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
-<!-- MAPBOX JS AND SCRIPT -->
-<link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
-</head>
-
-<body>
-<!-- ========================== NAVIGATION BAR ========================== -->
-<header class="navbar-header">
-  <nav id="navbar">
-    <div class="menu">
-      <div><img src="assets/media/TheTeaShop - logo.jpg" class="logo">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="ProductCatalogue.html">Product</a></li>
-          <li><a href="ContactUs.html">Contact Us</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Cart</a></li>
-        </ul>
-        <ul class="social-media">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TheTeaShop - Contact Us</title>
+    <link rel="icon" href="assets\media\TheTeaShop - logo.jpg">
+  
+    <!-- ========================== STYLES ========================== -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets\fonts\Avenir Next\avenir-next.css">
+  
+    <!-- FONT AWESOME -->
+      <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymouse"></script>
+      <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  
+    <!-- MAPBOX JS AND SCRIPT -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+  </head>
+  
+  <body>
+    <!-- ========================== NAVIGATION BAR ========================== -->
+    <header class="navbar-header">
+    <nav id="navbar">
+        <div class="menu">
+            <div><img src="assets/media/TheTeaShop - logo.jpg" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ProductCatalogue.html">Product</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <form>
+                    <div class="input-wrap">
+                        <input type="search" placeholder="Search.." class="input-search">
+                        <button type="submit" class="nav-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="nav-container"> 
+            <a href="index.html" class="brand">
+                <img class="navbar_logo" src="assets\media\TheTeaShop - alt logo.png" alt="TTS Logo">
+            </a>
+            <div class="container-inner">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ProductCatalogue.html">Product</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+                <form>
+                    <div class="input-wrap">
+                        <li class="user"><a href="#"><i class="fas fa-user"></i></a></li>
+                        <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+                    </div>
+                </form>
+            </div>
+            <i class="fas fa-bars" id="menu-btn"></i>
+        </div>
+    </nav>
+    </header>
+  
+    <!-- ========================== PAGE: Contact Us ========================== -->
+    <section>
+    <div class="contactus_container">
+      <div class="contactus_title">
+        <li>WE WOULD LOVE <br>
+          TO HEAR FROM YOU! </li>
+      </div>
+      <div class="contactus_subtitle">
+        <li>Please fill up the contact form and we will get back to you within 1 to 2 working days</li>
+      </div>
+      <div class="box">
+        <div class="contact form">
+          <form>
+            <div class="formbox">
+              <div class="row50">
+                <div class="inputBox"> <span>Name</span>
+                  <input type="text" placeholder="How should we address you" required>
+                </div>
+                <div class="inputBox"> <span>Email</span>
+                  <input type="text" placeholder="Please enter your email address" required>
+                </div>
+              </div>
+              <div class="row50">
+                <div class="inputBox"> <span>Phone Number</span>
+                  <input type="text" placeholder="Enter phone number" required>
+                </div>
+                <div class="inputBox"> <span>OrderID</span>
+                  <input type="text" placeholder="Write your order ID here" required>
+                </div>
+              </div>
+              <div class="row100">
+                <div class="inputBox"> <span>Subject</span>
+                  <input type="text" placeholder="Enter your subject" required>
+                </div>
+              </div>
+              <div class="row100">
+                <div class="inputBox"> <span>Message</span>
+                  <textarea placeholder="Please write your message here." required></textarea>
+                </div>
+              </div>
+              <div class="row100">
+                <div class="inputBox">
+                  <input type="Submit" value="Send">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>	
+  
+    <div class="about-wrapper-body-4">
+      <div class="about-text-box-1">
+        <h2>Get In Touch</h2><br>
+      <hr>
+        <p><i class="fa-solid fa-location-dot"></i>The Star Vista Atrium </p>
+        <p>Singapore</p><br>
+        <p><i class="fa-solid fa-envelope"></i>contactus@theteashop.com.sg</p><br>
+        <p><i class="fa-solid fa-phone"></i>+65 6694 3127</p>
+        <p>
+        <ul class="sci">
           <li><a href="#"><i class="fab fa-facebook"></i></a></li>
           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
           <li><a href="#"><i class="fab fa-youtube"></i></a></li>
         </ul>
-        <form>
-          <div class="input-wrap">
-            <input type="search" placeholder="Search.." class="input-search">
-            <button type="submit" class="nav-btn"><i class="fas fa-search"></i></button>
-          </div>
-        </form>
+        </p>
       </div>
+      <div id="map"></div>
     </div>
-    <div class="nav-container"> <a href="index.html" class="brand">TheTeaShop</a>
-      <div class="container-inner">
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="ProductCatalogue.html">Product</a></li>
-          <li><a href="ContactUs.html">Contact Us</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-        <form>
-          <div class="input-wrap">
-            <li class="user"><a href="#"><i class="fas fa-user"></i></a></li>
-            <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+    </section>
+  
+    <!-- ========================== FOOTER ========================== -->
+    <footer>
+      <div class="footer-row">
+          <div class="footer-col"><img src="assets/media/TheTeaShop - alt logo.jpg" class="footer-logo">
+              <p>The Tea Shop is passionately dedicated to modernising tea appreciation and sharing our knowledge
+                  about tea culture. We aim to share the health benefits of tea drinking with our customers and aspire
+                  for our customers to appreciate our specially curated tea blends.</p>
           </div>
-        </form>
-      </div>
-      <i class="fas fa-bars" id="menu-btn"></i> </div>
-  </nav>
-</header>
-<!-- ========================== PAGE: Contact Us ========================== -->
-<section>
-  <div class="contactus_container">
-    <div class="contactus_title">
-      <li>WE WOULD LOVE <br>
-        TO HEAR FROM YOU! </li>
-    </div>
-    <div class="contactus_subtitle">
-      <li>Please fill up the contact form and we will get back to you within 1 to 2 working days</li>
-    </div>
-    <div class="box">
-      <div class="contact form">
-        <form>
-          <div class="formbox">
-            <div class="row50">
-              <div class="inputBox"> <span>Name</span>
-                <input type="text" placeholder="How should we address you" required>
-              </div>
-              <div class="inputBox"> <span>Email</span>
-                <input type="text" placeholder="Please enter your email address" required>
-              </div>
-            </div>
-            <div class="row50">
-              <div class="inputBox"> <span>Phone Number</span>
-                <input type="text" placeholder="Enter phone number" required>
-              </div>
-              <div class="inputBox"> <span>OrderID</span>
-                <input type="text" placeholder="Write your order ID here" required>
-              </div>
-            </div>
-            <div class="row100">
-              <div class="inputBox"> <span>Subject</span>
-                <input type="text" placeholder="Enter your subject" required>
-              </div>
-            </div>
-            <div class="row100">
-              <div class="inputBox"> <span>Message</span>
-                <textarea placeholder="Please write your message here." required></textarea>
-              </div>
-            </div>
-            <div class="row100">
-              <div class="inputBox">
-                <input type="Submit" value="Send">
-              </div>
-            </div>
+          <div class="footer-col">
+              <h3>Store <div class="underline"><span></span></div>
+              </h3>
+              <p>The Star Vista Atrium</p>
+              <p>Singapore</p>
+              <p>138620, #02-48</p>
+              <p class="footer-email-id">contactus@theteashop.com.sg</p>
+              <h4>+65 6694 3127</h4>
           </div>
-        </form>
+          <div class="footer-col">
+              <h3>Links<div class="underline"><span></span></div>
+              </h3>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="ProductCatalogue.html">Product</a></li>
+                  <li><a href="ContactUs.html">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h3>
+                  Newsletter
+                  <div class="underline"><span></span></div>
+              </h3>
+
+              <form>
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" placeholder="Enter Your Email" required>
+                  <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+              </form>
+
+              <div class="footer_icons">
+                  <div class="footer_button">
+                      <a class="footer_iconlink" href="https://www.facebook.com/">
+                          <i class="uil uil-facebook-f"></i>
+                      </a>
+                      <button class="footer_button_facebook">
+                          Facebook
+                      </button>
+                  </div>
+         
+                  <div class="footer_button">
+                      <a class="footer_iconlink" href="https://www.twitter.com/">
+                          <i class="uil uil-twitter-alt"></i>
+                      </a>
+                      <button class="footer_button_twitter">
+                          Twitter
+                      </button>
+                  </div>
+         
+                  <div class="footer_button">
+                      <a class="footer_iconlink" href="https://www.instagram.com/">
+                          <i class="uil uil-instagram"></i>
+                      </a>
+                      <button class="footer_button_instagram">
+                          Instagram
+                      </button>
+                  </div>
+               </div>
+
+               <div class="altfooter_parent">
+                  <div class="altfooter_icons">
+                      <div class="footer_button">
+                          <a class="footer_iconlink" href="https://www.facebook.com/">
+                              <i class="uil uil-facebook-f"></i>
+                          </a>
+                          <button class="footer_button_facebook">
+                              Facebook
+                          </button>
+                      </div>
+             
+                      <div class="footer_button">
+                          <a class="footer_iconlink" href="https://www.twitter.com/">
+                              <i class="uil uil-twitter-alt"></i>
+                          </a>
+                          <button class="footer_button_twitter">
+                              Twitter
+                          </button>
+                      </div>
+             
+                      <div class="footer_button">
+                          <a class="footer_iconlink" href="https://www.instagram.com/">
+                              <i class="uil uil-instagram"></i>
+                          </a>
+                          <button class="footer_button_instagram">
+                              Instagram
+                          </button>
+                      </div>
+                   </div>
+              </div>
+          </div>
       </div>
-    </div>
-	</div>	
-
-  <div class="about-wrapper-body-4">
-    <div class="about-text-box-1">
-      <h2>Get In Touch</h2><br>
-		<hr>
-      <p><i class="fa-solid fa-location-dot"></i>The Star Vista Atrium </p>
-      <p>Singapore</p><br>
-      <p><i class="fa-solid fa-envelope"></i>contactus@theteashop.com.sg</p><br>
-      <p><i class="fa-solid fa-phone"></i>+65 6694 3127</p>
-      <p>
-      <ul class="sci">
-        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-      </ul>
-      </p>
-    </div>
-    <div id="map"></div>
-  </div>
-</section>
-
-<!-- ========================== NEW FOOTER ========================== -->
-<footer>
-  <div class="footer-row">
-    <div class="footer-col"><img src="assets/media/TheTeaShop - alt logo.jpg" class="footer-logo">
-      <p>The Tea Shop is passionately dedicated to modernising tea appreciation and sharing our knowledge
-        about tea culture. We aim to share the health benefits of tea drinking with our customers and aspire
-        for our customers to appreciate our specially curated tea blends.</p>
-    </div>
-    <div class="footer-col">
-      <h3>Store
-        <div class="underline"><span></span></div>
-      </h3>
-      <p>The Star Vista Atrium</p>
-      <p>Singapore</p>
-      <p>138620, #02-48</p>
-      <p class="footer-email-id">contactus@theteashop.com.sg</p>
-      <h4>+65 6694 3127</h4>
-    </div>
-    <div class="footer-col">
-      <h3>Links
-        <div class="underline"><span></span></div>
-      </h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Contacts</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h3>Newsletter
-        <div class="underline"><span></span></div>
-      </h3>
-      <form>
-        <i class="fa-regular fa-envelope"></i>
-        <input type="email" placeholder="Enter Your Email" required>
-        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-      </form>
-      <div class="footer-social-icons"> <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-youtube"></i></a> </div>
-    </div>
-  </div>
-  <hr>
-  <p class="footer-copyright">&copy; 2023 TheTeaShop | All Rights Reserved &#174;</p>
-</footer>
-<!-- ========================== SCROLLUP ========================== --> 
-<a href="#top" class="scrollup" id="scroll-up"> <i class="uil uil-arrow-up scrollup__icon"></i> </a> 
-
-<!-- ========================== EXTERNAL FILES ========================== --> 
-<script src="Javascript/navbar.js" defer></script> 
-<script src="Javascript/Mapbox.js"></script>
-
-</body>
+      <hr>
+      <p class="footer-copyright">&copy; 2023 TheTeaShop | All Rights Reserved &#174;</p>
+  </footer>
+  
+    <!-- ========================== SCROLLUP ========================== --> 
+    <a href="#top" class="scrollup" id="scroll-up"> <i class="uil uil-arrow-up scrollup__icon"></i> </a> 
+  
+    <!-- ========================== EXTERNAL FILES ========================== --> 
+    <script src="Javascript/navbar.js" defer></script> 
+    <script src="Javascript/Mapbox.js"></script>
+  </body>
 </html>

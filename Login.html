@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TheTeaShop - Login</title>
-
+    <link rel="icon" href="assets\media\TheTeaShop - logo.jpg">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <!-- ========================== STYLES ========================== -->
     <link rel="stylesheet" href="styles.css">
@@ -14,7 +14,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
-
+<!-- ========================== NAVIGATION BAR ========================== -->
+<header class="navbar-header">
+    <nav id="navbar">
+        <div class="menu">
+            <div><img src="assets/media/TheTeaShop - logo.jpg" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ProductCatalogue.html">Product</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+                <ul>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <form>
+                    <div class="input-wrap">
+                        <input type="search" placeholder="Search.." class="input-search">
+                        <button type="submit" class="nav-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="nav-container"> 
+            <a href="index.html" class="brand">
+                <img class="navbar_logo" src="assets\media\TheTeaShop - alt logo.png" alt="TTS Logo">
+            </a>
+            <div class="container-inner">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ProductCatalogue.html">Product</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+                <form>
+                    <div class="input-wrap">
+                        <li class="user"><a href="Login.html"><i class="fas fa-user"></i></a></li>
+                        <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+                    </div>
+                </form>
+            </div>
+            <i class="fas fa-bars" id="menu-btn"></i>
+        </div>
+    </nav>
+  </header>
+ <!-- ========================== PAGE: Login ========================== -->
 <body>
     <div class="login_container">
         <div class="forms_container">
@@ -106,6 +157,106 @@
             </div>
         </div>
     </div>
+     <!-- ========================== FOOTER ========================== -->
+ <footer>
+    <div class="footer-row">
+        <div class="footer-col"><img src="assets/media/TheTeaShop - alt logo.jpg" class="footer-logo">
+            <p>The Tea Shop is passionately dedicated to modernising tea appreciation and sharing our knowledge
+                about tea culture. We aim to share the health benefits of tea drinking with our customers and aspire
+                for our customers to appreciate our specially curated tea blends.</p>
+        </div>
+        <div class="footer-col">
+            <h3>Store <div class="underline"><span></span></div>
+            </h3>
+            <p>The Star Vista Atrium</p>
+            <p>Singapore</p>
+            <p>138620, #02-48</p>
+            <p class="footer-email-id">contactus@theteashop.com.sg</p>
+            <h4>+65 6694 3127</h4>
+        </div>
+        <div class="footer-col">
+            <h3>Links<div class="underline"><span></span></div>
+            </h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ProductCatalogue.html">Product</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>
+                Newsletter
+                <div class="underline"><span></span></div>
+            </h3>
+            <form>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" placeholder="Enter Your Email" required>
+                <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div class="footer_icons">
+                <div class="footer_button">
+                    <a class="footer_iconlink" href="https://www.facebook.com/">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <button class="footer_button_facebook">
+                        Facebook
+                    </button>
+                </div>
+       
+                <div class="footer_button">
+                    <a class="footer_iconlink" href="https://www.twitter.com/">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                    <button class="footer_button_twitter">
+                        Twitter
+                    </button>
+                </div>
+       
+                <div class="footer_button">
+                    <a class="footer_iconlink" href="https://www.instagram.com/">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <button class="footer_button_instagram">
+                        Instagram
+                    </button>
+                </div>
+             </div>
+             <div class="altfooter_parent">
+                <div class="altfooter_icons">
+                    <div class="footer_button">
+                        <a class="footer_iconlink" href="https://www.facebook.com/">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <button class="footer_button_facebook">
+                            Facebook
+                        </button>
+                    </div>
+           
+                    <div class="footer_button">
+                        <a class="footer_iconlink" href="https://www.twitter.com/">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                        <button class="footer_button_twitter">
+                            Twitter
+                        </button>
+                    </div>
+           
+                    <div class="footer_button">
+                        <a class="footer_iconlink" href="https://www.instagram.com/">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <button class="footer_button_instagram">
+                            Instagram
+                        </button>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="footer-copyright">&copy; 2023 TheTeaShop | All Rights Reserved &#174;</p>
+</footer>
 
     <script src="Javascript/Login.js"></script>
 </body>
